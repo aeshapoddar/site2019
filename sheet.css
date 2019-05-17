@@ -21,12 +21,12 @@ a{
     background: transparent;
 }
 .newDialog{
-    padding: 32px;
+    padding: 48px 120px;
     box-sizing: border-box;
     background: #424242;
-    height: 200px;
+    display: flex;
     width: 100%;
-    font-family: 'Circular Std Book';
+    font-family: 'Circular Std Book','Arial';
     color: #fff;
 }
 
@@ -40,6 +40,7 @@ a{
 
   ::-webkit-scrollbar-thumb {
     background-color: #2799ff;
+    border-radius: 8px;
   }
   .wrapper {
     text-align: center;
@@ -151,7 +152,7 @@ body, html {
     position: fixed;
     top: 0;
     z-index: 3;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0,0,0,0.8);
     padding-right: 64px;
     box-sizing: border-box;
     border-bottom: thin solid rgba(255,255,255,0.2);
@@ -201,6 +202,9 @@ body, html {
     padding: 0px 64px; 
     text-align: justify;
     padding-right: 40%;
+    
+    background: linear-gradient(#000000c0,#000000c0), url(bg.jpg);
+    background-size: cover;
     padding-top: 96px;
 }
 .s{
@@ -230,12 +234,17 @@ a{
     width: 100%;
     height: 200vh;
 }
+
+.newDialog *{
+    box-sizing: border-box;
+}
 .inviteMes{
     padding-top: 108px;
     padding-bottom: 48px;
     min-height: 550px;
     max-width: 100%;
-    
+    display: flex;
+    flex-direction: column;
 }
 .connect{
     width: 50%;
@@ -306,6 +315,11 @@ li{
     margin-bottom: 24px;
     
 }
+.nds{
+    width: calc(33% - 16px);
+    display: inline-block;
+    margin: 16px;
+}
 li{
     text-decoration: none;
     display: block;
@@ -340,6 +354,16 @@ li{
     .gi{
         margin: 12px;
         width: wrap;
+    }
+    .nds{
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin: 16px 0px;
+    }
+    .newDialog{
+        flex-direction: column;
+        padding: 48px;
     }
 	.navbar .icon{
         position: relative;
