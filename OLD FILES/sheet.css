@@ -2,6 +2,9 @@ a{
     text-decoration: none;
     color: white;
 }
+a :active{
+    color: rgb(47, 231, 47);
+}
 #indexes{
     background: black;
     margin: 0;
