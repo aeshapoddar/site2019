@@ -19,21 +19,63 @@
 
   </head>
   <style>
-      .bgimg{
-        background-image: url(C:\Users\Ganesh\Documents\GitHub\site2019\beach.jpg);
+
+    
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* Float four columns side by side */
+    .column {
+      float: left;
+      width: 25%;
+      padding: 0 10px;
+    }
+    
+    /* Remove extra left and right margins, due to padding */
+    .row {margin: 0 -5px;}
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive columns */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
       }
-  </style>
-  <body>
+    }
+    
+    /* Style the counter cards */
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      text-align: center;
+      background-color: #f1f1f1;
+    }
+    </style>
+  <body background="C:\Users\Ganesh\Documents\GitHub\site2019\blue.png">
+  
     <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
             <div class="col-md-7 heading-section text-center ftco-animate">
                 <p  class="font-weight-bold" class="text-red bg-dark">
                     <h2>THE SPEAKERS</h2>
+                 </div>
                 </p>
-
             </div>
         </div>
-    </div>
+    
 
     <div class="accordion" id="accordion">
         <div class="card">
@@ -45,166 +87,299 @@
                 </h2>
             
             </div>
-            <div id="collapse2020" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="row d-flex">
-                    <div class="container-fluid padding">
-                    <div clss="row padding">
-                        <div class="col-md-4">
-                            <div class="card" class="col-md-3 d-flex ftco-animate">
-                                <div class="blog-entry justify-content-end">
-                                    
-                                <img class="card-img-top" src="Wall-E-on-Earth-1440-x-900-Wallpaper.jpg">
-                                <div class="card-body">
-                                    <h4 class="card-title"> Speaker 1</h4>
-                                    <p class="card-text">
-                                        Descripton of speaker
-                                    </p>
-                                    <a href="#" class="btn btn-outline-secondary">See Profile</a>
-                                    
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                    </div>
-                </div>
-                <div class="row d-flex">
-                    <div class="container-fluid padding">
-                    <div clss="row padding">
-                        <div class="col-md-4">
-                            <div class="card" class="col-md-3 d-flex ftco-animate">
-                                <div class="blog-entry justify-content-end">
-                                    
-                                <img class="card-img-top" src="BG_SAMPLE.png">
-                                <div class="card-body">
-                                    <h4 class="card-title"> Speaker 2</h4>
-                                    <p class="card-text">
-                                        Descripton of speaker
-                                    </p>
-                                    <a href="#" class="btn btn-outline-secondary">See Profile</a>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-
-        <div class="card">
-            <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse2019" aria-expanded="false" aria-controls="collapse2019">
-                        <h5>2019</h5>
-                    </button>
-                </h2>
-            </div>
-            <div id="collapse2019" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="row d-flex">
-                    <div class="container-fluid padding">
-                    <div clss="row padding">
-                        <div class="col-md-4">
-                            <div class="card" class="col-md-3 d-flex ftco-animate">
-                                <div class="blog-entry justify-content-end">
-                                <img class="card-img-top" src="background.png">
-                                <div class="card-body">
-                                    <h4 class="card-title"> Speaker 1</h4>
-                                    <p class="card-text">
-                                        Descripton of speaker
-                                    </p>
-                                    <a href="#" class="btn btn-outline-secondary">See Profile</a>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                    </div>
-                </div>
-                <div class="row d-flex">
-                    <div class="container-fluid padding">
-                    <div clss="row padding">
-                        <div class="col-md-4">
-                            <div class="card" class="col-md-3 d-flex ftco-animate">
-                                <div class="blog-entry justify-content-end">
-                                <img class="card-img-top" src="Wall-E-on-Earth-1440-x-900-Wallpaper.jpg">
-                                <div class="card-body">
-                                    <h4 class="card-title"> Speaker 2</h4>
-                                    <p class="card-text">
-                                        Descripton of speaker
-                                    </p>
-                                    <a href="#" class="btn btn-outline-secondary">See Profile</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-        </div>
-    </div>
-</div>
-    
+ <div id="collapse2020" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+<div class="row">
+  <div class="column">
     <div class="card">
-        <div class="card-header" id="headingThree">
-            <h2 class="mb-0">
-                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse2018" aria-expanded="false" aria-controls="collapse2018">
-                    <h5>2018</h5>
-                </button>
-            </h2>
+        <img class="card-img-top"  src="C:\Users\Ganesh\Documents\GitHub\site2019\_DSC1426.JPG">
+        <div class="card-body">
+            <h4 class="card-title"> Speaker 1</h4>
+            <p class="card-text">
+                Descripton of speaker
+            </p>
+            <a href="#" class="btn btn-outline-secondary">See Profile</a>
         </div>
-        <div id="collapse2018" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-            <div class="row d-flex">
-                <div class="container-fluid padding">
-                <div clss="row padding">
-                    <div class="col-md-4">
-                        <div class="card" class="col-md-3 d-flex ftco-animate">
-                            <div class="blog-entry justify-content-end">
-                            <img class="card-img-top" src="BG_SAMPLE.png">
-                            <div class="card-body">
-                                <h4 class="card-title"> Speaker 1</h4>
-                                <p class="card-text">
-                                    Descripton of speaker
-                                </p>
-                                <a href="#" class="btn btn-outline-secondary">See Profile</a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-                </div>
-            </div>
-            <div class="row d-flex">
-                <div class="container-fluid padding">
-                <div clss="row padding">
-                    <div class="col-md-4">
-                        <div class="card" class="col-md-3 d-flex ftco-animate">
-                            <div class="blog-entry justify-content-end">
-                            <img class="card-img-top"  src="flower.jpg">
-                            <div class="card-body">
-                                <h4 class="card-title"> Speaker 2</h4>
-                                <p class="card-text">
-                                    Descripton of speaker
-                                </p>
-                                <a href="#" class="btn btn-outline-secondary">See Profile</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> 
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+        <img class="card-img-top"  src="C:\Users\Ganesh\Documents\GitHub\site2019\beach.jpg">
+        <div class="card-body">
+            <h4 class="card-title"> Speaker 2</h4>
+            <p class="card-text">
+                Descripton of speaker
+            </p>
+            <a href="#" class="btn btn-outline-secondary">See Profile</a>
         </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+        <img class="card-img-top"  src="C:\Users\Ganesh\Documents\GitHub\site2019\_DSC1426.JPG">
+        <div class="card-body">
+            <h4 class="card-title"> Speaker 3</h4>
+            <p class="card-text">
+                Descripton of speaker
+            </p>
+            <a href="#" class="btn btn-outline-secondary">See Profile</a>
+        </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+        <img class="card-img-top"  src="C:\Users\Ganesh\Documents\GitHub\site2019\beach.jpg">
+        <div class="card-body">
+            <h4 class="card-title"> Speaker 4</h4>
+            <p class="card-text">
+                Descripton of speaker
+            </p>
+            <a href="#" class="btn btn-outline-secondary">See Profile</a>
+        </div>
+  </div>
+</div>
+
+<div class="column">
+    <div class="card">
+        <img class="card-img-top"  src="C:\Users\Ganesh\Documents\GitHub\site2019\background.png">
+        <div class="card-body">
+            <h4 class="card-title"> Speaker 5</h4>
+            <p class="card-text">
+                Descripton of speaker
+            </p>
+            <a href="#" class="btn btn-outline-secondary">See Profile</a>
+        </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <img class="card-img-top"  src="C:\Users\Ganesh\Documents\GitHub\site2019\_DSC1426.JPG">
+        <div class="card-body">
+            <h4 class="card-title"> Speaker 6</h4>
+            <p class="card-text">
+                Descripton of speaker
+            </p>
+            <a href="#" class="btn btn-outline-secondary">See Profile</a>
+        </div>
+    </div>
+  </div>
+</div>
+ </div>
+        </div>
+
+<div class="card">
+    <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse2019" aria-expanded="false" aria-controls="collapse2019">
+                <h5>2019</h5>
+            </button>
+        </h2>
+    </div>
+    <div id="collapse2019" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+    <div class="row">
+        <div class="column">
+          <div class="card">
+              <img class="card-img-top"  src="Wall-E-on-Earth-1440-x-900-Wallpaper.jpg">
+              <div class="card-body">
+                  <h4 class="card-title"> Speaker 1</h4>
+                  <p class="card-text">
+                      Descripton of speaker
+                  </p>
+                  <a href="#" class="btn btn-outline-secondary">See Profile</a>
+              </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+              <img class="card-img-top"  src="C:\Users\Ganesh\Documents\GitHub\site2019\beach.jpg">
+              <div class="card-body">
+                  <h4 class="card-title"> Speaker 2</h4>
+                  <p class="card-text">
+                      Descripton of speaker
+                  </p>
+                  <a href="#" class="btn btn-outline-secondary">See Profile</a>
+              </div>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+              <img class="card-img-top"  src="Wall-E-on-Earth-1440-x-900-Wallpaper.jpg">
+              <div class="card-body">
+                  <h4 class="card-title"> Speaker 3</h4>
+                  <p class="card-text">
+                      Descripton of speaker
+                  </p>
+                  <a href="#" class="btn btn-outline-secondary">See Profile</a>
+              </div>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+              <img class="card-img-top"  src="C:\Users\Ganesh\Documents\GitHub\site2019\beach.jpg">
+              <div class="card-body">
+                  <h4 class="card-title"> Speaker 4</h4>
+                  <p class="card-text">
+                      Descripton of speaker
+                  </p>
+                  <a href="#" class="btn btn-outline-secondary">See Profile</a>
+              </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+            <img class="card-img-top"  src="C:\Users\Ganesh\Documents\GitHub\site2019\flower.jpg">
+            <div class="card-body">
+                <h4 class="card-title"> Speaker 5</h4>
+                <p class="card-text">
+                    Descripton of speaker
+                </p>
+                <a href="#" class="btn btn-outline-secondary">See Profile</a>
+            </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+            <img class="card-img-top"  src="C:\Users\Ganesh\Documents\GitHub\site2019\flower.jpg">
+            <div class="card-body">
+                <h4 class="card-title"> Speaker 6</h4>
+                <p class="card-text">
+                    Descripton of speaker
+                </p>
+                <a href="#" class="btn btn-outline-secondary">See Profile</a>
+            </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+            <img class="card-img-top"  src="flower.jpg">
+            <div class="card-body">
+                <h4 class="card-title"> Speaker 7</h4>
+                <p class="card-text">
+                    Descripton of speaker
+                </p>
+                <a href="#" class="btn btn-outline-secondary">See Profile</a>
+            </div>
+      </div>
+    </div>
+      </div>
     </div>
 </div>
-        
-   
+
+
+<div class="card">
+    <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse2018" aria-expanded="false" aria-controls="collapse2018">
+                <h5>2018</h5>
+            </button>
+        </h2>
     </div>
+    <div id="collapse2018" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+    <div class="row">
+        <div class="column">
+          <div class="card">
+              <img class="card-img-top"  src="BG_SAMPLE.png">
+              <div class="card-body">
+                  <h4 class="card-title"> Speaker 1</h4>
+                  <p class="card-text">
+                      Descripton of speaker
+                  </p>
+                  <a href="#" class="btn btn-outline-secondary">See Profile</a>
+              </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+              <img class="card-img-top"  src="flower.jpg">
+              <div class="card-body">
+                  <h4 class="card-title"> Speaker 2</h4>
+                  <p class="card-text">
+                      Descripton of speaker
+                  </p>
+                  <a href="#" class="btn btn-outline-secondary">See Profile</a>
+              </div>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+              <img class="card-img-top"  src="BG_SAMPLE.png">
+              <div class="card-body">
+                  <h4 class="card-title"> Speaker 3</h4>
+                  <p class="card-text">
+                      Descripton of speaker
+                  </p>
+                  <a href="#" class="btn btn-outline-secondary">See Profile</a>
+              </div>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+              <img class="card-img-top"  src="flower.jpg">
+              <div class="card-body">
+                  <h4 class="card-title"> Speaker 4</h4>
+                  <p class="card-text">
+                      Descripton of speaker
+                  </p>
+                  <a href="#" class="btn btn-outline-secondary">See Profile</a>
+              </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+            <img class="card-img-top"  src="Wall-E-on-Earth-1440-x-900-Wallpaper.jpg">
+            <div class="card-body">
+                <h4 class="card-title"> Speaker 5</h4>
+                <p class="card-text">
+                    Descripton of speaker
+                </p>
+                <a href="#" class="btn btn-outline-secondary">See Profile</a>
+            </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+            <img class="card-img-top"  src="Wall-E-on-Earth-1440-x-900-Wallpaper.jpg">
+            <div class="card-body">
+                <h4 class="card-title"> Speaker 6</h4>
+                <p class="card-text">
+                    Descripton of speaker
+                </p>
+                <a href="#" class="btn btn-outline-secondary">See Profile</a>
+            </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+            <img class="card-img-top"  src="Wall-E-on-Earth-1440-x-900-Wallpaper.jpg">
+            <div class="card-body">
+                <h4 class="card-title"> Speaker 7</h4>
+                <p class="card-text">
+                    Descripton of speaker
+                </p>
+                <a href="#" class="btn btn-outline-secondary">See Profile</a>
+            </div>
+        </div>
+      </div>
+      </div>
+    </div>
+</div>
+ </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
