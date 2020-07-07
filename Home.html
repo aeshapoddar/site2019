@@ -11,6 +11,11 @@
     <title>Home</title>
   </head>
   <link rel="stylesheet" href="" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+  integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <style>
       @media (max-width: 800px) { 
           .crsm{
@@ -47,6 +52,9 @@
         width: 200px;
         height: 200px;
       }
+      .crcpic{
+        border-radius: 50%;
+      }
       .spkmarg{
         display: block;
         margin-left: auto;
@@ -54,24 +62,104 @@
         text-align: center;
       }
       .bgimg{
-        background-image: url("BG_SAMPLE.png");
+        background-image: url("Paper Backdrop.jpg");
       }
       .bgimg2{
-        background-image: url("48335853751_1e6d9c0fa9_o.jpg");
+        background: linear-gradient(#000000b2,#000000b2), url("48335853751_1e6d9c0fa9_o.jpg");
+        background-size: cover;
       }
       .hcontent{
-		  width: 100%;
+      width: 100%;
 		  text-align: center;
-		  align-items: center;
-		  justify-content: start;
-		  padding-right: inherit;
+      vertical-align: middle;
+      padding-right: inherit;
+      box-sizing: border-box;
       padding: 48px;
+      height: 500px;
+    }
+    a{
+      color:#FFF;
+    }
+    .texthc{
+      margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
     }
     .s{
       text-align: justify;
     }
+    .wrapper {
+    text-align: center;
+    display: block;
+    
+  }
+  .countdown {
+    display: flex;
+    
+  }
+
+  .countdown .day,
+  .countdown .hour,
+  .countdown .min,
+  .countdown .sec {
+    color: #2962FF;
+    padding: 1vw 3vw;
+    text-align: center;
+  }
+
+  .countdown .day .num,
+  .countdown .hour .num,
+  .countdown .min .num,
+  .countdown .sec .num {
+    display: block;
+    font-size: 8vw;
+    line-height: 1em;
+  }
+
+  .countdown .day .word,
+  .countdown .hour .word,
+  .countdown .min .word,
+  .countdown .sec .word {
+    display: block;
+    font-size: 2vw;
+    color: #8a99ab;
+  }
+  .footer{
+    position: relative;
+    background-color: red;
+    margin-top: 16px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.footerItem{
+    color: #fff;
+    font-size: 20pt;
+    margin: 16px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+.navs{
+  text-align: right;
+}
   </style>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navs">
+      <img src="TEDxYouth@JNS LogoBOLD.svg" height="50px" width="auto">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">Speakers</a>
+          <a class="nav-item nav-link" href="#">Team</a>
+        </div>
+      </div>
+    </nav>
     <div class="bgimg">
         <div id="carouselExampleIndicators" class="carousel slide crs crsm" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -96,8 +184,8 @@
           </a>
         </div>
       </div>
-      <img src="48335853751_1e6d9c0fa9_o.jpg" height= "500px"; width="100%">
       <div class="hcontent bgimg2">
+        <div class=texthc>
         <span style="font-size: 30px; font-weight: 300; color:#FFF">&ldquo;COME GET ILLUMINATED&rdquo;</span>
         <span style="font-size: 40px; font-weight: 900; font-family: Arial; color: red;">TEDx<span
                 style="color:#FFF; font-weight: 400; font-family: Helvetica;">Youth@JNS</span></span>
@@ -112,6 +200,7 @@
             challenge conventional ideas and make a difference!</span>
     </div>
   </div>
+</div>
       <div class="container">
         <h2 class="spkmarg" style="margin-top: 20px; margin-bottom: 10px;">TEDxYouth@JNS Timeline</h2>
       </div>
@@ -159,10 +248,20 @@
           </div>
         </div>
       </div>
+      <div style="display: flex;flex-direction: column; align-items: center; margin-top: 16px;">
+        <div class="wrapper">
+            <div class="countdown" data-date="14-8-2020" data-time="00:00">
+                <div class="day"><span class="num"></span><span class="word"></span></div>
+                <div class="hour"><span class="num"></span><span class="word"></span></div>
+                <div class="min"><span class="num"></span><span class="word"></span></div>
+                <div class="sec"><span class="num"></span><span class="word"></span></div>
+            </div>
+        </div>
+    </div>
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-interval="3000">
-            <img src="Disk_pack1.svg.png" class="d-block spk">
+            <img src="_DSC1426.JPG" class="d-block spk crcpic">
             <h5 class="spkmarg">Speaker Name</h5>
             <p class="spkmarg">TALK DESCRIPTION</p>
           </div>
@@ -204,51 +303,30 @@
             <a href="#" class="btn btn-danger">Meet the Entire Team</a>
           </div>
         </div>
-      <div style="display: flex;flex-direction: column; align-items: center; margin-top: 16px;">
-          <div class="wrapper">
-              <div class="countdown" data-date="14-8-2020" data-time="00:00">
-                  <div class="day"><span class="num"></span><span class="word"></span></div>
-                  <div class="hour"><span class="num"></span><span class="word"></span></div>
-                  <div class="min"><span class="num"></span><span class="word"></span></div>
-                  <div class="sec"><span class="num"></span><span class="word"></span></div>
-              </div>
-          </div>
       </div>
+        <div class="footer">
+          <div style="text-align: center">
+              <a href="https://github.com/lafeo/tedxyouthjns"><i title="Github: Developer info. + src"
+                      class="fab fa-github footerItem"></i></a>
+              <a href="https://www.instagram.com/tedxyouthjns/"><i title="Instagram"
+                      class="fab fa-instagram footerItem"></i></a>
+              <a href="https://www.facebook.com/tedxyouthjns/"><i title="Facebook"
+                      class="fab fa-facebook footerItem"></i></a>
+              <a href="https://wa.me/+912226187474/?text=I'm%20*name*.%20This%20is%20my%20introduction%20video!"><i
+                      title="Whatsapp: Message us!" class="fab fa-whatsapp footerItem"></i></a>
+              <a href="mailto:tedxyouthjns@jns.ac.in?"><i title="E-mail" class="far fa-envelope-open footerItem"></i></a>
+          </div>
+          <div style="text-align: center; margin-top: 24px;">
+              <span style="font-size: 8pt; color: white; width: 100"><a
+                      href="https://www.linkedin.com/in/raayaan-sahu-2b4796142/">Developer</a></span><br>
+              <span style="font-size: 8pt; color: white; width: 100%;">This independently organized TEDx event is operated
+                  under license from TED</span>
+          </div>
+        </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script>
-    
-      var x = 0;
-      $("#bar").click(function () {
-  
-          var t = this;
-          if (x == 0) {
-              t("#respNav").css("visibility", "visible").fadeIn(250);
-              t(".fa-bars").removeClass("fa-bars");
-              t(".icon").addClass("fa-times");
-              x = 1;
-          } else if (x == 1) {
-              t("#respNav").fadeOut(250);
-              t(".fa-times").removeClass("fa-times");
-              t(".icon").addClass("fa-bars");
-              x = 0;
-          }
-  
-      }.bind($));
-  
-      $(function () {
-          $(document).scroll(function () {
-              var $nav = $("#nav");
-              if ($(this).scrollTop() > $nav.height()) {
-                  $nav.toggleClass('scroll', true);
-  
-              } else {
-                  $nav.toggleClass('scroll', false);
-  
-              }
-          });
-      });
-    </script>
+    <script type="text/javascript" src="./countdown.js"></script>
+    <script type="text/javascript" src="./init.js"></script>
   </body>
 </html>
