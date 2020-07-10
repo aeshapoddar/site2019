@@ -75,8 +75,13 @@
       padding-right: inherit;
       box-sizing: border-box;
       padding: 48px;
-      height: 500px;
+      height: 900px;
     }
+    @media (min-width: 800px) {
+        .hcontent{
+          height: 600px;
+        }
+      }
     a{
       color:#FFF;
     }
@@ -100,12 +105,14 @@
     display: flex;
     
     }
-
+    .timer {
+      background-color: black;
+    }
     .countdown .day,
     .countdown .hour,
     .countdown .min,
     .countdown .sec {
-    color: #2962FF;
+    color:#FFF;
     padding: 1vw 3vw;
     text-align: center;
    }
@@ -144,6 +151,10 @@
     }
     .navs{
       text-align: right;
+    }
+    .testimonial{
+      margin-top: 50px;
+      margin-bottom: 50px;
     }
   </style>
   <body>
@@ -191,18 +202,26 @@
                 style="color:#FFF; font-weight: 400; font-family: Helvetica;">Youth@JNS</span></span>
 
         <br />
-        <span class="s" style="font-size: 18px; color:#FFF;">We're ecstatic to announce that TEDxYouth@JNS is growing, and is
-            now in its second edition! Created in the spirit of TED's mission, 'Ideas Worth Spreading,' and our
-            school motto, 'Knowledge is Strength Supreme', TEDxYouth@JNS exemplifies the conglomeration of
-            intellect-stimulating and groundbreaking ideas. TEDxYouth@JNS will be held on the
-            <strong>14th of August, 2020</strong>. So get ready to
-            immerse yourself into a melting pot of a plethora of ideas and insights that will leave you inspired to
-            challenge conventional ideas and make a difference!</span>
+        <span class="s" style="font-size: 18px; color:#FFF;">Conversations today,
+          Revolutions tomorrow.
+          <br>
+          <br>
+          "Never underestimate the valuable and important difference you make in every life you touch. For the impact you make today has a powerful rippling effect on every tomorrow."
+          <br>
+          <br>
+          At TEDxYouth@JNS, our aim is to amplify the voices of the community and bring together the best minds to create a better tomorrow, for ourselves and for the world.
+          With the third edition of our TEDx event, we hope to take action and leave a resonating impact on this modern world! 
+          Abiding by our school’s motto, "Knowledge is strength supreme", we aim to share the ideas that are worth sharing and support change and arouse curiosity.
+          <br>
+          <br>
+          TEDxYouth@JNS aims to share this knowledge  through the visionary ideas and wisdom of our numerous speakers. TEDxYouth@JNS will be held on <strong>14th August, 2020</strong> at <strong>5p.m.</strong> .  
+          Get ready to embark on an enlightening and edifying experience from the comfort of your homes!
+          See the change, Be the change.</span>
     </div>
   </div>
 </div>
       <div class="container">
-        <h2 class="spkmarg" style="margin-top: 20px; margin-bottom: 10px;">TEDxYouth@JNS Timeline</h2>
+        <h1 class="spkmarg" style="margin-top: 20px; margin-bottom: 10px;">Timeline</h1>
       </div>
       <div class="accordion" id="accordionExample">
         <div class="card">
@@ -248,7 +267,7 @@
           </div>
         </div>
       </div>
-      <div style="display: flex;flex-direction: column; align-items: center; margin-top: 16px;">
+      <div style="display: flex;flex-direction: column; align-items: center; margin-top: 16px;" class="timer">
         <div class="wrapper">
             <div class="countdown" data-date="14-8-2020" data-time="00:00">
                 <div class="day"><span class="num"></span><span class="word"></span></div>
@@ -258,7 +277,7 @@
             </div>
         </div>
     </div>
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <!--<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-interval="3000">
             <img src="_DSC1426.JPG" class="d-block spk crcpic">
@@ -294,16 +313,47 @@
           <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
+      </div>-->
+      <div id="carouselExampleControls" class="carousel slide testimonial" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="3000">
+            <h5 class="spkmarg">"There were various inspiring speeches and performances."</h5>
+            <p class="spkmarg">- Aaryan Shah<br>
+              #tedxyouthjns #tedxyouth #tedx #tedtalks</p>
+          </div>
+          <div class="carousel-item" data-interval="3000">
+            <h5 class="spkmarg">"Such a great initiative taken by JNS, <br> very inspiring and motivating.<br> Keep it up !!" </h5>
+            <p class="spkmarg">- Ronnit Agarwal<br>
+            #tedxyouthjns #tedxyouth #tedx #tedtalks</p>
+          </div>
+          <div class="carousel-item" data-interval="3000">
+            <h5 class="spkmarg">"The speakers are truly adorable. <br>The idea of bringing speakers from various fields is really appreciated, which allows us to open our perspectives. <br>Great arrangement !"</h5>
+            <p class="spkmarg">- Jash Rambhia<br>
+              #tedxyouthjns #tedxyouth #tedx #tedtalks</p>
+          </div>
+          <div class="carousel-item" data-interval="3000">
+            <h5 class="spkmarg">TEDxYouth@JNS..... <br>Feel proud to be a silent part of your incredible journey !<br>God bless you ! </h5>
+            <p class="spkmarg">- Urvashi<br>
+              #tedxyouthjns #tedxyouth #tedx #tedtalks</p>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-        <div class="card w-100" id="car" height="300px">
+        <!--<div class="card w-100" id="car" height="300px">
           <div class="card-body" height="300px">
             <img src="_DSC1426.JPG" class="float-left imgmargin" height="240px" width="160px">
             <h5 class="card-title">Message by Primary Organizer</h5>
             <p class="card-text overflow-auto sz">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eleifend lacus convallis felis rhoncus, sodales tristique lorem accumsan. Praesent eleifend interdum lacus, quis fermentum ex accumsan in. Nam dui urna, lacinia id elit pulvinar, viverra imperdiet lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla volutpat erat lobortis, gravida enim sit amet, iaculis libero. Duis vitae molestie libero. Integer sit amet diam id nulla eleifend tempus. Nam nec dignissim urna. Donec quis tortor arcu. Nulla vitae ligula placerat, mollis eros sed, rutrum quam. Ut et volutpat felis.</p>
             <a href="#" class="btn btn-danger">Meet the Entire Team</a>
           </div>
-        </div>
-      </div>
+        </div> -->
         <div class="footer">
           <div style="text-align: center">
               <a href="https://github.com/lafeo/tedxyouthjns"><i title="Github: Developer info. + src"
@@ -317,8 +367,8 @@
               <a href="mailto:tedxyouthjns@jns.ac.in?"><i title="E-mail" class="far fa-envelope-open footerItem"></i></a>
           </div>
           <div style="text-align: center; margin-top: 24px;">
-              <span style="font-size: 8pt; color: white; width: 100"><a
-                      href="https://www.linkedin.com/in/raayaan-sahu-2b4796142/">Developer</a></span><br>
+              <!--<span style="font-size: 8pt; color: white; width: 100"><a
+                      href="https://www.linkedin.com/in/raayaan-sahu-2b4796142/">Developer</a></span><br>-->
               <span style="font-size: 8pt; color: white; width: 100%;">This independently organized TEDx event is operated
                   under license from TED</span>
           </div>
