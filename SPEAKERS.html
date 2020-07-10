@@ -19,10 +19,7 @@
 
   </head>
   <style>
-
-    
-    
-    * {
+ * {
       box-sizing: border-box;
     }
     
@@ -60,11 +57,11 @@
     .card {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       padding: 16px;
-      text-align: center;
-      background-color: #f1f1f1;
     }
-    </style>
-  <body background="C:\Users\Ganesh\Documents\GitHub\site2019\blue.png">
+
+   </style>
+
+  <body>
   
     <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
@@ -170,10 +167,10 @@
  </div>
         </div>
 
-<div class="card">
+<div  class="card">
     <div class="card-header" id="headingTwo">
         <h2 class="mb-0">
-            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse2019" aria-expanded="false" aria-controls="collapse2019">
+            <button id="collapse-init" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse2019" aria-expanded="true" aria-controls="collapse2019">
                 <h5>2019</h5>
             </button>
         </h2>
@@ -386,4 +383,10 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
+  <script>
+     $('#collapse2019').on('show.bs.collapse', function () {
+  // do something...
+})
+  </script>
 </html>
+
