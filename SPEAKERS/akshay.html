@@ -41,9 +41,14 @@ box-sizing: content-box;
 div.text {
   text-align: right;
 } 
-
-.box {
+@media (min-width: 1000px) {
+  .box {
    display: flex;
+   align-items:center;
+}
+.spkpic{
+    width: 50% !important;
+}
 }
 
 .vid {
@@ -62,9 +67,8 @@ align-items: center;
        <h1>AKSHAY AYRE</h1>
 </div>
 
-   <div class="container">
-    <img src="48335853506_9f732f1d19_o.jpg" width="50%" height="50%"> 
-    <div>
+   <div class="container box">
+    <img src="48335853506_9f732f1d19_o.jpg" class="spkpic" width="100%"> 
       <span style="color: rgb(255, 247, 247);" >
         <b>
             Mr. Akshay Ayre, a renowned Bharata Nrutyam dancer, who was trained under the able guidance of Guru Smt. Tejaswini Lele and currently training in Bharata Nrutyam under the guidance of Guru Dr. Jayashree Rajagopalan considers it his mission to pass on the tradition of Indian Classical Dance to the upcoming generations.
@@ -79,7 +83,6 @@ align-items: center;
             He ended with a performance describing the completeness of indian classical dances 
             </b>
             </span>
-    </div>
    </div>
 
     <div class="vid">
