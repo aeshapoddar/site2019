@@ -28,6 +28,7 @@
 
            .bs-example{
               margin: 60px;
+             
            }
 
            body {
@@ -67,19 +68,17 @@
              padding: 16px;
            }
 
-          .red-text {
-           color: red;
-           font-weight: bold;
+           .card-header{
+             color: white;
+             font-weight: bolder;
            }
 
            p.c {
+            color:black;
+             font-weight: bolder;
            font-style: oblique;
            text-align: center;
            }
-
-            .accordion {
-             background-color: #0a0a0a;
-            }
 
             .footerItem{
               color: #fff;
@@ -119,29 +118,33 @@
     </div>
 
 <div class="bs-example">
-   <div id="accordion">
+   <div class="accordian" id="accordionExample">
 
-    <div class="card">
-      <div class="card-header" id="headingOne">
-        <a    class="card-link" data-toggle="collapse" href="#collapseOne">
+    <div class="card" >
+      <div class="card-header" id="headingOne"  style="background-color: black;">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+          <b>
           2020
+        </b>
         </a>
       </div>
-      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+      <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
         <div class="card-body">
            <p class="c" style="align-content: center;">                  COMING SOON...</p>
           </div>
        
       </div>
     </div>
-
-    <div class="card">
-      <div class="card-header"  id="headingTwo">
+    
+    <div class="card" >
+      <div class="card-header"  id="headingTwo"  style="background-color: black;" >
         <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+          <b>
         2019
+      </b>
       </a>
       </div>
-      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+      <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
           <div class="card-body">
         <div class="row">
             <div class="column">
@@ -180,7 +183,7 @@
             
             <div class="column">
               <div class="card">
-                  <img class="card-img-top"  src="shronit.jpg" height="150cm">
+                  <img class="card-img-top"  src="shronit.jpg" width="75%">
                   <div class="card-body">
                       <h4 class="card-title"> Shronit Ladhani</h4>
                       <p class="card-text" style="font-size: 12px;">
@@ -262,14 +265,15 @@
 </div>
 
     <div class="card">
-      <div class="card-header" id="headingThree">
-        
+      <div class="card-header" id="headingThree"  style="background-color: black;" >
         <a role="button" class="collapsed show" data-toggle="collapse" href="#collapseThree">
+          <b>
           2018
+        </b>
         </a>
       
       </div>
-      <div id="collapseThree" class="collapse" data-parent="#accordion">
+      <div id="collapseThree" class="collapse" data-parent="#accordionExample">
           <div class="card-body">
         <div class="row">
             <div class="column">
@@ -349,6 +353,7 @@
   </div>
 </div>
 </div>
+
 
 <div class="footer">
   <div style="text-align: center">
