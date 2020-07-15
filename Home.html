@@ -7,10 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
     <title>Home</title>
   </head>
-  <link rel="stylesheet" href="" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
   integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
@@ -134,6 +132,67 @@
     font-size: 2vw;
     color: #8a99ab;
     }
+    .giZZ {
+    border-radius: 12px;
+    height: 48px !important;
+    margin-top: 24px;
+    margin-left: 16px;
+    line-height: 48px !important;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .navbarZZ {
+    height: 96px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.8);
+    padding-right: 64px;
+    box-sizing: border-box;
+    border-bottom: thin solid rgba(255, 255, 255, 0.2);
+    transition: 1s;
+  }
+  .navitemZZ{
+    height: 96px;
+    width: auto;
+    box-sizing: border-box;
+    line-height: 96px;
+    color: #fff;
+ 
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    float: right;
+    padding: 0px 24px;
+  }
+  .respZZ {
+    display: block;
+    float: none;
+    color: white;
+    line-height: 56px;
+ 
+    font-size: 15pt;
+ 
+    transition: 0.3s;
+  }
+  .respConZZ {
+    box-sizing: border-box;
+    border-bottom: thin solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    position: fixed;
+    top: 96px;
+    width: 100%;
+    text-align: center;
+    visibility: hidden;
+  }
+  .navitemZZ:hover .respZZ:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+  }
+ 
+  .giZZ:hover {
+    background-color: #e91e63;
+    border-radius: 48px;
+  }
   .footer{
     position: relative;
     background-color: red;
@@ -163,9 +222,45 @@
     .btn {
       background-color: rgb(0,0,0) !important;
     }
+    .navbarZZ .icon{
+    display: none;
+    }
+    @media(max-width: 880px){
+      .navitemZZ{
+          display: none;
+      }
+      .giZZ{
+          margin: 12px;
+          width: wrap;
+      }
+      .nds{
+          width: 100%;
+          display: block;
+          text-align: center;
+          margin: 16px 0px;
+      }
+      .newDialog{
+          flex-direction: column;
+          padding: 48px;
+      }
+      .navbarZZ .icon{
+          position: relative;
+          float: right;
+          right: 0;
+          top: 32px;
+          color: white;
+ 
+          font-size: 20pt;
+          display: block;
+      }
+    }
+    .navback{
+      height:96px;
+      background-color: black;
+    }
   </style>
   <body>
-    <nav class="navbar navbar-expand-lg">
+    <!--<nav class="navbar navbar-expand-lg">
       <img src="TEDxYouth@JNS LogoBOLD.svg" height="50px" width="auto">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -181,11 +276,36 @@
             <a class="dropdown-item" href="speaker.html">2019</a>
             <a class="dropdown-item" href="speaker.html">2018</a>
           </div>
-          <!--<a class="nav-item nav-link" href="#">Team</a>-->
+          <a class="nav-item nav-link" href="#">Team</a>
         </div>
       </div>
-    </nav>
-    <div class="bgimg">
+    </nav>-->
+    <div id="navZZ" class="navbarZZ">
+      <img height="64" style="margin-top: 16px; margin-left: 64px; float: left" src="lg.svg" />
+
+      <a ><i href="javascript:void(0);" id="barZZ" class="fas fa-bars icon"></i></a>
+
+      <div id="respNav" class="respConZZ">
+          <a id="" href="https://tedxyouthjns.eventbrite.com" class="respZZ giZZ">Get tickets</a>
+          <!--<a id="" class="resp">Archive</a>-->
+          <!--<a id="" class="navitem ">Speakers</a>-->
+          <a id="" href="speaker.html" class="respZZ">Speakers</a>
+          <a id="" href="index.html" class="respZZ">Blog</a>
+          <a id="" href="about.html" class="respZZ">About <span style="color: red; font-weight: 700">TEDx</span></a>
+          <a id="" href="Home.html" class="respZZ">Home</a>
+      </div>
+        <a id="" href="https://tedxyouthjns.eventbrite.com" class="navitemZZ giZZ">Get tickets</a>
+        <!--<a id="" class="navitem ">Archive</a>-->
+        <!--<a id="" class="navitem ">Speakers</a>-->
+        <a id="" href="speaker.html" class="navitemZZ ">Speakers</a>
+        <a id="" href="blog/index.html" class="navitemZZ ">Blog</a>
+        <a id="" href="about.html" class="navitemZZ ">About <span style="color: red; font-weight: 700">TEDx</span></a>
+        <a id="" href="index.html" class="navitemZZ ">Home</a>
+    </div>
+    <div class="navback">
+
+    </div>
+        <div class="bgimg">
         <div id="carouselExampleIndicators" class="carousel slide crs crsm" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class=""></li>
@@ -231,9 +351,9 @@
           TEDxYouth@JNS aims to share this knowledge  through the visionary ideas and wisdom of our numerous speakers. TEDxYouth@JNS will be held on <strong>14th August, 2020</strong> at <strong>5p.m.</strong> .  
           Get ready to embark on an enlightening and edifying experience from the comfort of your homes!
           See the change, Be the change.</span>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
       <div class="container">
         <h1 class="spkmarg" style="margin-top: 20px; margin-bottom: 10px; font-family: Arial, Helvetica, sans-serif;">Timeline</h1>
       </div>
@@ -441,6 +561,41 @@
                   under license from TED</span>
           </div>
         </div>
+        <script>
+    var x = 0;
+    $("#barZZ").click(function () {
+        var t = this;
+        if (x == 0) {
+            t("#respNav").css("visibility", "visible").fadeIn(250);
+            t(".fa-bars").removeClass("fa-bars");
+            t(".icon").addClass("fa-times");
+            x = 1;
+        } else if (x == 1) {
+            t("#respNav").fadeOut(250);
+            t(".fa-times").removeClass("fa-times");
+            t(".icon").addClass("fa-bars");
+            x = 0;
+        }
+    });
+    $(function () {
+        function dropOrNawt(){
+        var x = document.getElementById("navZZ");
+        if(x.className == "navbarZZ")
+            x.className += "respZZ";
+        else
+            x.className = "navbarZZ";
+    }
+        $(document).scroll(function () {
+            var $navZZ = $("#navZZ");
+            if ($(this).scrollTop() > $navZZ.height()) {
+                $navZZ.toggleClass('scroll', true);
+
+            } else {
+                $navZZ.toggleClass('scroll', false);
+            }
+        });
+    });
+   </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

@@ -1,0 +1,237 @@
+@media (max-width: 800px) {
+    .crsm {
+      margin-left: 0% !important;
+      margin-right: 0% !important;
+      width: 100% !important;
+      height: fit-content !important;
+    }
+    .sz {
+      height: 200px;
+    }
+  }
+  .crs {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 500px;
+  }
+  .imgmargin {
+    margin-right: 5%;
+  }
+  #car {
+    background-color: black;
+    color: white;
+  }
+  .spk {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+  }
+  .crcpic {
+    border-radius: 50%;
+  }
+  .spkmarg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .bgimg {
+    background-image: url("Paper Backdrop.jpg");
+  }
+  .bgimg2 {
+    background: linear-gradient(#000000b2, #000000b2),
+      url("48335853751_1e6d9c0fa9_o.jpg");
+    background-size: cover;
+  }
+  .hcontent {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    padding-right: inherit;
+    box-sizing: border-box;
+    padding: 48px;
+    height: 900px;
+  }
+  a{
+    text-decoration: none !important;
+    color: white;
+  }
+  a:hover{
+    color: white;
+  }
+  .texthc {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .s {
+    text-align: justify;
+  }
+  .wrapper {
+    text-align: center;
+    display: block;
+  }
+  .countdown {
+    display: flex;
+  }
+  .timer {
+    background-color: black;
+  }
+  .countdown .day,
+  .countdown .hour,
+  .countdown .min,
+  .countdown .sec {
+    color: #fff;
+    padding: 1vw 3vw;
+    text-align: center;
+  }
+ 
+  .countdown .day .num,
+  .countdown .hour .num,
+  .countdown .min .num,
+  .countdown .sec .num {
+    display: block;
+    font-size: 8vw;
+    line-height: 1em;
+  }
+ 
+  .countdown .day .word,
+  .countdown .hour .word,
+  .countdown .min .word,
+  .countdown .sec .word {
+    display: block;
+    font-size: 2vw;
+    color: #8a99ab;
+  }
+ 
+  .giZZ {
+    border-radius: 12px;
+    height: 48px !important;
+    margin-top: 24px;
+    margin-left: 16px;
+    line-height: 48px !important;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .navitemZZ{
+    height: 96px;
+    width: auto;
+    box-sizing: border-box;
+    line-height: 96px;
+    color: #fff;
+ 
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    float: right;
+    padding: 0px 24px;
+  }
+  .navbarZZ {
+    height: 96px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.8);
+    padding-right: 64px;
+    box-sizing: border-box;
+    border-bottom: thin solid rgba(255, 255, 255, 0.2);
+    transition: 1s;
+  }
+  .respZZ {
+    display: block;
+    float: none;
+    color: white;
+    line-height: 56px;
+ 
+    font-size: 15pt;
+ 
+    transition: 0.3s;
+  }
+  .respConZZ {
+    box-sizing: border-box;
+    border-bottom: thin solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    position: fixed;
+    top: 96px;
+    width: 100%;
+    text-align: center;
+ 
+    visibility: hidden;
+  }
+ 
+ 
+  .navitemZZ:hover .respZZ:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+  }
+ 
+  .giZZ:hover {
+    background-color: #e91e63;
+    border-radius: 48px;
+  }
+  .footer {
+    position: relative;
+    background-color: red;
+    margin-top: 16px;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  .footerItem {
+    color: #fff;
+    font-size: 20pt;
+    margin: 16px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: 0.3s;
+  }
+  .testimonial {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .btn {
+    background-color: rgb(0, 0, 0) !important;
+  }
+ 
+    @media(max-width: 880px){
+      .navitemZZ{
+          display: none;
+      }
+      .giZZ{
+          margin: 12px;
+          width: wrap;
+      }
+      .nds{
+          width: 100%;
+          display: block;
+          text-align: center;
+          margin: 16px 0px;
+      }
+      .newDialog{
+          flex-direction: column;
+          padding: 48px;
+      }
+      .navbarZZ .icon{
+          position: relative;
+          float: right;
+          right: 0;
+          top: 32px;
+          color: white;
+ 
+          font-size: 20pt;
+          display: block;
+      }
+      .hcontent {
+        height: 600px;
+      }
+    }
+    
+ 
