@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<!--This website is developed by,  
+            █▀▀▀▀▀█  █▄ █▄█ ▄ █▀▀▀▀▀█
+            █ ███ █ ▄▀█ ▀▄▀ ▄ █ ███ █
+            █ ▀▀▀ █ ▀▄▄▀█▀▄ ▀ █ ▀▀▀ █
+            ▀▀▀▀▀▀▀ ▀▄▀ █ █▄█ ▀▀▀▀▀▀▀
+            ▀▀ ▄▄▀▀█ ▀█▄▄█▄▄▄▄ ▄██▄▄ 
+            ▀▄ █▄▄▀█▄▀▄ █▀██ █▀▄ █ ▀█
+            ▄▄█ █▄▀▀▀▀██▄▄ █▄ ▀▄   ▄▀
+            █  ▄█▄▀ █▄▀▄  █▀▀▄▄█▀█▄▀█
+            ▀ ▀ ▀ ▀ ▄▄█▀ ▀▀▀█▀▀▀█ ▀  
+            █▀▀▀▀▀█ █▄▀█ ▀█▄█ ▀ █   ▀
+            █ ███ █  ▀▄█▀▀█▀███▀▀ ▀█▄
+            █ ▀▀▀ █ ▄    ▀▀▄▄█▄▄▄▀▀ █
+            ▀▀▀▀▀▀▀ ▀  ▀▀   ▀▀▀  ▀  ▀
+            (twitter)
+    This website was made on the 15th of November, 2018.
+    Duration: 30 days
+    The website has been checked of it's language, and of being usuable on 
+    any device with a minimum width of, 400px.
+
+    For technical assistance, inquiry, or for reasons including contacting 
+    the developer,                              
+            ▄▄▄▄▄▄▄ ▄    ▄▄ ▄ ▄   ▄▄▄▄▄▄▄  
+            █ ▄▄▄ █ █▄ ▀█▀█▀ ▄▄██ █ ▄▄▄ █  
+            █ ███ █ ▀██ █   ▀▄█   █ ███ █  
+            █▄▄▄▄▄█ █▀█ ▄ ▄ █▀▄▀▄ █▄▄▄▄▄█  
+            ▄▄  ▄▄▄   █▀▄█ ▄▄▀▀▄▄  ▄ ▄▄▄▄  
+              ▀▄ ▄▄  ▄▄  ▀▀█ ▄▀  ██▀█   █  
+            ▀▄▀▄█▀▄ █▀ ▄▀▄██ █  ██  ▀▀  █  
+            █ ▀▄▄▄▄██ █▄█▄▄█▀ █   ▀██ ▀ █  
+             ▀▄ ▄▄▄▄ ▄▀▀▄█ ▄ █▀▀█▄▀  █  ▀  
+            ▀ ▀ █ ▄▀▀▀   ▀▀█▀██ ▄▄█▀▀▄▄ █  
+            ▄▄▀▀▀▀▄▄▀  ▄▀▄█ ▀█▀▄▄▄█▄▄  ▄█  
+            ▄▄▄▄▄▄▄ ▀▄█▄█▄▄██▄▀██ ▄ █▀▄ █  
+            █ ▄▄▄ █ █ ▀▀▄█ ▄ █▀██▄▄▄█▀     
+            █ ███ █  ▀▀  ▀▀█▄█▀▄██    ▀▄█  
+            █▄▄▄▄▄█ █▄▀▄▀▄██ █▀ █  ▀ █ █▀  
+            (email)
+
+    Help make this website better on Github,
+            ▄▄▄▄▄▄▄   ▄    ▄  ▄▄  ▄▄▄▄▄▄▄  
+            █ ▄▄▄ █ ▄▀ ▄   █ ▀▀█  █ ▄▄▄ █  
+            █ ███ █  █  ██▄▄ ▄██  █ ███ █  
+            █▄▄▄▄▄█ ▄ █▀█ █▀▄ █▀█ █▄▄▄▄▄█  
+            ▄▄▄ ▄▄▄▄█  ▀▄  ▄▄██▀▄▄▄   ▄    
+            ▄  ▄▄▀▄█▄▀▄██▀▄ █▄  █▄█ ▄▀▄▄█  
+            █▀▀  ▄▄ ▀▀█▄▀▀██▄█▀██▄▄▀▀▄ █▄  
+            ▀▀▀▄█ ▄▀▀▄█▀ ▄▀ █▀▀ ▀▀█ ▄█ ▄█  
+            ▀ ██ ▄▄ █ ▀▀▄  ▀▀█ ▄█▀█▄ █ █▄  
+            ▄ ▄▀▄█▄▀▀▀▀██▀▄ ▀▀   █▀▄▄▀▀▄█  
+            ▄▀█▀ ▀▄███ ▄▀▀█▀▀█▀██████▀ ▀   
+            ▄▄▄▄▄▄▄ ██ ▀ ▄▀ ▀▀ ██ ▄ █▄▀██  
+            █ ▄▄▄ █ ██▄▀▄  ▄██  █▄▄▄█▀ ▄▄  
+            █ ███ █ ▄████▀▄ ▀ █▄▀  ██▄▀▀█  
+            █▄▄▄▄▄█ ██ ▄▀▀██ █ ███ ▄█  █▄  
+            (https://github.com/lafeo/tedxyouthjns)
+    
+    Special thanks to: 
+        ...
+         Collaborator,
+            █▀▀▀▀▀█ ▀▄█▀▀ ▀ ▄ █▀▀▀▀▀█
+            █ ███ █   ▀ ▀█▀ █ █ ███ █
+            █ ▀▀▀ █  ▀▄▄▀▀█ █ █ ▀▀▀ █
+            ▀▀▀▀▀▀▀ █ █ ▀▄▀▄█ ▀▀▀▀▀▀▀
+            ██ █▀▄▀▄▄█▀▄▀▄▄▄█▄▀▄▄▄▄▄▀
+             ▀█ ██▀▀ ▄██▀▀▄█▄ ▀▄▀█▄▄█
+            █ ▀▄█▄▀██▀ █ ▄▄█▄ ▀ ▄  ▄▀
+            █▀▀ ▀ ▀   ▄▄ ▀ ▀ ▄▄▄▀██▀█
+            ▀ ▀   ▀▀██  ▀█ ▀█▀▀▀█ ██ 
+            █▀▀▀▀▀█  ▀ ██▄▀▄█ ▀ █  ▄█
+            █ ███ █ ██▄▄ ▄█▀███▀▀  █▄
+            █ ▀▀▀ █ ▄█ █▄ ▀▄  ▄▄█▀███
+            ▀▀▀▀▀▀▀ ▀▀ ▀▀   ▀▀▀  ▀  ▀
+            (twitter)
+                
+                                            
+-->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link rel="manifest" href="/manifest.json">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="" />
+    <meta name="Keywords" content="" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta http-equiv="EXPIRES" content="" />
+    <meta name="expires" content="" />
+    <meta name="robots" content="index, follow" />
+
+
+    <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
+    <link rel="icon" href="">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sheet.css" />
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>TEDxYouth@JNS About</title>
+    <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+</head>
+<style>
+    a:active{
+        color:aqua;
+    }
+</style>
+<body>
+
+    <div id="header" class="header">
+        <img class="dexs" />
+        <div id="nav" class="navbar">
+
+            <a href="javascript:void(0);" id="bar"><i class="fas fa-bars icon"></i></a>
+            <div id="respNav" class="respCon">
+                <a id="" href="https://tedxyouthjns.eventbrite.com" class="resp gi">Get tickets</a>
+                <!--<a id="" class="resp">Archive</a>-->
+                <!--<a id="" class="navitem ">Speakers</a>-->
+                <a id="" href="index.html" class="resp">Archive</a>
+                <a id="" href="index.html" class="resp">Blog</a>
+                <a id="" href="about.html" class="resp">About <span style="color: red; font-weight: 700">TEDx</span></a>
+                <a id="" href="Home.html" class="resp">Home</a>
+
+            </div>
+            <img height="64" style="margin-top: 16px; margin-left: 64px; float: left" src="lg.svg" />
+            <a id="" href="https://tedxyouthjns.eventbrite.com" class="navitem gi">Get tickets</a>
+            <!--<a id="" class="navitem ">Archive</a>-->
+            <!--<a id="" class="navitem ">Speakers</a>-->
+            <a id="" href="index.html" class="navitem ">Archive</a>
+            <a id="" href="blog/index.html" class="navitem ">Blog</a>
+            <a id="" href="about.html" class="navitem ">About <span style="color: red; font-weight: 700">TEDx</span></a>
+            <a id="" href="index.html" class="navitem ">Home</a>
+
+        </div>
+
+
+
+        <div class="hcontent">
+            <span style="font-size: 30px; font-weight: 300;">&ldquo;COME GET ILLUMINATED&rdquo;</span>
+            <span style="font-size: 40px; font-weight: 900; font-family: Arial; color: red;">TEDx<span
+                    style="color: #FFF; font-weight: 400; font-family: Helvetica;">Youth@JNS</span></span>
+
+            <br />
+            <span class="s" style="font-size: 18px;">We're ecstatic to announce that TEDxYouth@JNS is growing, and is
+                now in its second edition! Created in the spirit of TED's mission, 'Ideas Worth Spreading,' and our
+                school motto, 'Knowledge is Strength Supreme', TEDxYouth@JNS exemplifies the conglomeration of
+                intellect-stimulating and groundbreaking ideas. TEDxYouth@JNS will be held on the <x
+                    style="background-color: purple;">17th of July, 2020, at Jamnabai Narsee School</x>. So get ready to
+                immerse yourself into a melting pot of a plethora of ideas and insights that will leave you inspired to
+                challenge conventional ideas and make a difference!</span>
+        </div>
+    </div>
+    <div id="iM" class="inviteMes">
+        <div style="align-self: center; max-width: 720px; width: 90%;">
+            <iframe
+                style="width: 100%; height: 480px; max-width: 720px; border: none;"
+                src="https://www.youtube.com/embed/videoseries?list=PLf_0nImcdtqFSdNEUf7VC4bu80Nz8s94S"></iframe>
+        </div>
+
+        <!--<div class="spacer1"></div>
+            <div class="infoFI">
+                <x style ="font-weight: 600">Heyy! We are currently preparing for our next event! <br>
+                </x>-->
+    </div>
+    <div class="newDialog">
+        <span class="nds"><span class="version">1.0</span><span
+                style="font-weight: 100; color: #BDBDBD">September 8th 2018</span>
+            <span style="display: block;"><br>
+                The first TEDxYouth@JNS event was launched. 100 viwers + 2 viewing parties!
+                <br>An event organized solely by the students of Jamnabai Narsee School, this yada yada yada.
+            </span><br>
+        </span>
+        <span class="nds"><span class="version">1.1</span><span style="font-weight: 100; color: #BDBDBD">May 05
+                2019</span>
+            <span style="display: block;"><br>
+                We are glad to annouce that we have intergrated a new Blog into the TEDxYouth@JNS website. Where you can
+                get live updates from our teams,
+                organizers and speakers!
+            </span><br>
+        </span>
+        <span class="nds"><span class="version">1.2</span><span style="font-weight: 100; color: #BDBDBD">May 05
+                2019</span>
+            <span style="display: block;"><br>
+                Visit our Instagram handles where you will be able to get a glimpse about what goes into TEDxYouth@JNS.
+                Our lastest news and annoucements take place
+                on this handle hence it's an absolute must follow us at <a
+                    href="https://www.instagram.com/tedxyouthjns/?hl=en\">TEDxYouth@JNS/IG</a>
+            </span><br>
+        </span>
+
+
+    </div>
+    <div style="display: flex;flex-direction: column; align-items: center; margin-top: 16px;">
+        <div class="wrapper">
+            <div class="countdown" data-date="5-7-2019" data-time="09:00">
+                <div class="day"><span class="num"></span><span class="word"></span></div>
+                <div class="hour"><span class="num"></span><span class="word"></span></div>
+                <div class="min"><span class="num"></span><span class="word"></span></div>
+                <div class="sec"><span class="num"></span><span class="word"></span></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div style="text-align: center">
+            <a href="https://github.com/lafeo/tedxyouthjns"><i title="Github: Developer info. + src"
+                    class="fab fa-github footerItem"></i></a>
+            <a href="https://www.instagram.com/tedxyouthjns/"><i title="Instagram"
+                    class="fab fa-instagram footerItem"></i></a>
+            <a href="https://www.facebook.com/tedxyouthjns/"><i title="Facebook"
+                    class="fab fa-facebook footerItem"></i></a>
+            <a href="https://wa.me/+912226187474/?text=I'm%20*name*.%20This%20is%20my%20introduction%20video!"><i
+                    title="Whatsapp: Message us!" class="fab fa-whatsapp footerItem"></i></a>
+            <a href="mailto:tedxyouthjns@jns.ac.in?"><i title="E-mail" class="far fa-envelope-open footerItem"></i></a>
+        </div>
+        <div style="text-align: center; margin-top: 24px;">
+            <span style="font-size: 8pt; color: white; width: 100"><a
+                    href="https://www.linkedin.com/in/raayaan-sahu-2b4796142/">Developer</a></span><br>
+            <span style="font-size: 8pt; color: white; width: 100%;">This independently organized TEDx event is operated
+                under license from TED</span>
+        </div>
+
+
+    </div>
+
+</body>
+
+<script>
+    var x = 0;
+    $("#bar").click(function () {
+
+        var t = this;
+        if (x == 0) {
+            t("#respNav").css("visibility", "visible").fadeIn(250);
+            t(".fa-bars").removeClass("fa-bars");
+            t(".icon").addClass("fa-times");
+            x = 1;
+        } else if (x == 1) {
+            t("#respNav").fadeOut(250);
+            t(".fa-times").removeClass("fa-times");
+            t(".icon").addClass("fa-bars");
+            x = 0;
+        }
+
+    }.bind($));
+
+    $(function () {
+        $(document).scroll(function () {
+            var $nav = $("#nav");
+            if ($(this).scrollTop() > $nav.height()) {
+                $nav.toggleClass('scroll', true);
+
+            } else {
+                $nav.toggleClass('scroll', false);
+
+            }
+        });
+    });
+    $(document).ready(function () {
+        var c = 0;
+        var slides = ["bg.jpg", "bg2.jpg", "bg3.jpg"];
+
+        var u1 = function () {
+            c++;
+            if (c >= slides.length) c = 0;
+            $(".dexs").fadeOut(1000, function () {
+                $(".dexs").css("background-image", "url(" + slides[c] + ")");
+                $(".dexs").fadeIn(1000);
+            });
+        }
+        setInterval(u1, 4000);
+        $("a").on('click', function (event) {
+
+            if (this.hash !== "") {
+
+                event.preventDefault();
+
+                var hash = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+
+                });
+            }
+        });
+
+    });
+</script>
+<script type="text/javascript" src="./countdown.js"></script>
+<script type="text/javascript" src="./init.js"></script>
+
+</html>

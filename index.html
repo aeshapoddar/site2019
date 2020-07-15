@@ -1,202 +1,459 @@
-﻿<!DOCTYPE html>
-<!--This website is developed by,  
-            █▀▀▀▀▀█  █▄ █▄█ ▄ █▀▀▀▀▀█
-            █ ███ █ ▄▀█ ▀▄▀ ▄ █ ███ █
-            █ ▀▀▀ █ ▀▄▄▀█▀▄ ▀ █ ▀▀▀ █
-            ▀▀▀▀▀▀▀ ▀▄▀ █ █▄█ ▀▀▀▀▀▀▀
-            ▀▀ ▄▄▀▀█ ▀█▄▄█▄▄▄▄ ▄██▄▄ 
-            ▀▄ █▄▄▀█▄▀▄ █▀██ █▀▄ █ ▀█
-            ▄▄█ █▄▀▀▀▀██▄▄ █▄ ▀▄   ▄▀
-            █  ▄█▄▀ █▄▀▄  █▀▀▄▄█▀█▄▀█
-            ▀ ▀ ▀ ▀ ▄▄█▀ ▀▀▀█▀▀▀█ ▀  
-            █▀▀▀▀▀█ █▄▀█ ▀█▄█ ▀ █   ▀
-            █ ███ █  ▀▄█▀▀█▀███▀▀ ▀█▄
-            █ ▀▀▀ █ ▄    ▀▀▄▄█▄▄▄▀▀ █
-            ▀▀▀▀▀▀▀ ▀  ▀▀   ▀▀▀  ▀  ▀
-            (twitter)
-    This website was made on the 15th of November, 2018.
-    Duration: 30 days
-    The website has been checked of it's language, and of being usuable on 
-    any device with a minimum width of, 400px.
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    For technical assistance, inquiry, or for reasons including contacting 
-    the developer,                              
-            ▄▄▄▄▄▄▄ ▄    ▄▄ ▄ ▄   ▄▄▄▄▄▄▄  
-            █ ▄▄▄ █ █▄ ▀█▀█▀ ▄▄██ █ ▄▄▄ █  
-            █ ███ █ ▀██ █   ▀▄█   █ ███ █  
-            █▄▄▄▄▄█ █▀█ ▄ ▄ █▀▄▀▄ █▄▄▄▄▄█  
-            ▄▄  ▄▄▄   █▀▄█ ▄▄▀▀▄▄  ▄ ▄▄▄▄  
-              ▀▄ ▄▄  ▄▄  ▀▀█ ▄▀  ██▀█   █  
-            ▀▄▀▄█▀▄ █▀ ▄▀▄██ █  ██  ▀▀  █  
-            █ ▀▄▄▄▄██ █▄█▄▄█▀ █   ▀██ ▀ █  
-             ▀▄ ▄▄▄▄ ▄▀▀▄█ ▄ █▀▀█▄▀  █  ▀  
-            ▀ ▀ █ ▄▀▀▀   ▀▀█▀██ ▄▄█▀▀▄▄ █  
-            ▄▄▀▀▀▀▄▄▀  ▄▀▄█ ▀█▀▄▄▄█▄▄  ▄█  
-            ▄▄▄▄▄▄▄ ▀▄█▄█▄▄██▄▀██ ▄ █▀▄ █  
-            █ ▄▄▄ █ █ ▀▀▄█ ▄ █▀██▄▄▄█▀     
-            █ ███ █  ▀▀  ▀▀█▄█▀▄██    ▀▄█  
-            █▄▄▄▄▄█ █▄▀▄▀▄██ █▀ █  ▀ █ █▀  
-            (email)
-
-    Help make this website better on Github,
-            ▄▄▄▄▄▄▄   ▄    ▄  ▄▄  ▄▄▄▄▄▄▄  
-            █ ▄▄▄ █ ▄▀ ▄   █ ▀▀█  █ ▄▄▄ █  
-            █ ███ █  █  ██▄▄ ▄██  █ ███ █  
-            █▄▄▄▄▄█ ▄ █▀█ █▀▄ █▀█ █▄▄▄▄▄█  
-            ▄▄▄ ▄▄▄▄█  ▀▄  ▄▄██▀▄▄▄   ▄    
-            ▄  ▄▄▀▄█▄▀▄██▀▄ █▄  █▄█ ▄▀▄▄█  
-            █▀▀  ▄▄ ▀▀█▄▀▀██▄█▀██▄▄▀▀▄ █▄  
-            ▀▀▀▄█ ▄▀▀▄█▀ ▄▀ █▀▀ ▀▀█ ▄█ ▄█  
-            ▀ ██ ▄▄ █ ▀▀▄  ▀▀█ ▄█▀█▄ █ █▄  
-            ▄ ▄▀▄█▄▀▀▀▀██▀▄ ▀▀   █▀▄▄▀▀▄█  
-            ▄▀█▀ ▀▄███ ▄▀▀█▀▀█▀██████▀ ▀   
-            ▄▄▄▄▄▄▄ ██ ▀ ▄▀ ▀▀ ██ ▄ █▄▀██  
-            █ ▄▄▄ █ ██▄▀▄  ▄██  █▄▄▄█▀ ▄▄  
-            █ ███ █ ▄████▀▄ ▀ █▄▀  ██▄▀▀█  
-            █▄▄▄▄▄█ ██ ▄▀▀██ █ ███ ▄█  █▄  
-            (https://github.com/lafeo/tedxyouthjns)
-    
-    Special thanks to: 
-        ...
-         Collaborator,
-            █▀▀▀▀▀█ ▀▄█▀▀ ▀ ▄ █▀▀▀▀▀█
-            █ ███ █   ▀ ▀█▀ █ █ ███ █
-            █ ▀▀▀ █  ▀▄▄▀▀█ █ █ ▀▀▀ █
-            ▀▀▀▀▀▀▀ █ █ ▀▄▀▄█ ▀▀▀▀▀▀▀
-            ██ █▀▄▀▄▄█▀▄▀▄▄▄█▄▀▄▄▄▄▄▀
-             ▀█ ██▀▀ ▄██▀▀▄█▄ ▀▄▀█▄▄█
-            █ ▀▄█▄▀██▀ █ ▄▄█▄ ▀ ▄  ▄▀
-            █▀▀ ▀ ▀   ▄▄ ▀ ▀ ▄▄▄▀██▀█
-            ▀ ▀   ▀▀██  ▀█ ▀█▀▀▀█ ██ 
-            █▀▀▀▀▀█  ▀ ██▄▀▄█ ▀ █  ▄█
-            █ ███ █ ██▄▄ ▄█▀███▀▀  █▄
-            █ ▀▀▀ █ ▄█ █▄ ▀▄  ▄▄█▀███
-            ▀▀▀▀▀▀▀ ▀▀ ▀▀   ▀▀▀  ▀  ▀
-            (twitter)
-                
-                                            
--->
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-    <link rel="manifest" href="/manifest.json">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="" />
-    <meta name="Keywords" content="" />
-    <meta http-equiv="Content-Language" content="en" />
-    <meta http-equiv="EXPIRES" content="" />
-    <meta name="expires" content="" />
-    <meta name="robots" content="index, follow" />
-
-
-    <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
-    <link rel="icon" href="">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="sheet.css" />
-    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:700" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
+  integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Home</title>
+  </head>
+  <link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <title>TEDxYouth@JNS About</title>
-    <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
-</head>
-<style>
-    a:active{
-        color:aqua;
+  <style>
+      @media (max-width: 800px) { 
+          .crsm{
+          margin-left: 0% !important;
+          margin-right: 0% !important;
+          width: 100% !important;
+          height:fit-content !important;
+          }
+          .sz{
+          height: 200px;
+          }
+      }
+      .crs{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 800px;
+        height: 500px;
+          } 
+      .imgmargin{
+        margin-right: 5%;
+      }
+      #car{
+        background-color: black;
+        color:  white;
+      }
+      .spk{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        width: 200px;
+        height: 200px;
+      }
+      .crcpic{
+        border-radius: 50%;
+      }
+      .spkmarg{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+      .bgimg{
+        background-image: url("Paper Backdrop.jpg");
+      }
+      .bgimg2{
+        background: linear-gradient(#000000b2,#000000b2), url("48335853751_1e6d9c0fa9_o.jpg");
+        background-size: cover;
+      }
+      .hcontent{
+      width: 100%;
+		  text-align: center;
+      vertical-align: middle;
+      padding-right: inherit;
+      box-sizing: border-box;
+      padding: 48px;
+      height: 900px;
     }
-</style>
-<body>
+    @media (min-width: 800px) {
+        .hcontent{
+          height: 600px;
+        }
+      }
+    a{
+      color:#FFF;
+    }
+    .texthc{
+      margin: 0;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+       transform: translate(-50%, -50%);
+    }
+    .s{
+      text-align: justify;
+    }
+    .wrapper {
+    text-align: center;
+    display: block;
+    
+    }
+   .countdown {
+    display: flex;
+    
+    }
+    .timer {
+      background-color: black;
+    }
+    .countdown .day,
+    .countdown .hour,
+    .countdown .min,
+    .countdown .sec {
+    color:#FFF;
+    padding: 1vw 3vw;
+    text-align: center;
+   }
 
-    <div id="header" class="header">
-        <img class="dexs" />
-        <div id="nav" class="navbar">
+    .countdown .day .num,
+    .countdown .hour .num,
+    .countdown .min .num,
+    .countdown .sec .num {
+    display: block;
+    font-size: 8vw;
+    line-height: 1em;
+    }
 
-            <a href="javascript:void(0);" id="bar"><i class="fas fa-bars icon"></i></a>
-            <div id="respNav" class="respCon">
-                <a id="" href="https://tedxyouthjns.eventbrite.com" class="resp gi">Get tickets</a>
-                <!--<a id="" class="resp">Archive</a>-->
-                <!--<a id="" class="navitem ">Speakers</a>-->
-                <a id="" href="index.html" class="resp">Archive</a>
-                <a id="" href="index.html" class="resp">Blog</a>
-                <a id="" href="about.html" class="resp">About <span style="color: red; font-weight: 700">TEDx</span></a>
-                <a id="" href="Home.html" class="resp">Home</a>
+  .countdown .day .word,
+  .countdown .hour .word,
+  .countdown .min .word,
+   .countdown .sec .word {
+    display: block;
+    font-size: 2vw;
+    color: #8a99ab;
+    }
+    .giZZ {
+    border-radius: 12px;
+    height: 48px !important;
+    margin-top: 24px;
+    margin-left: 16px;
+    line-height: 48px !important;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .navbarZZ {
+    height: 96px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.8);
+    padding-right: 64px;
+    box-sizing: border-box;
+    border-bottom: thin solid rgba(255, 255, 255, 0.2);
+    transition: 1s;
+  }
+  .navitemZZ{
+    height: 96px;
+    width: auto;
+    box-sizing: border-box;
+    line-height: 96px;
+    color: #fff;
+ 
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    float: right;
+    padding: 0px 24px;
+  }
+  .respZZ {
+    display: block;
+    float: none;
+    color: white;
+    line-height: 56px;
+    font-size: 15pt;
+  }
+  .respConZZ {
+    box-sizing: border-box;
+    border-bottom: thin solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    position: fixed;
+    top: 96px;
+    width: 100%;
+    text-align: center;
+    visibility: hidden;
+  }
+  .navitemZZ:hover .respZZ:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+  }
+ 
+  .giZZ:hover {
+    background-color: #e91e63;
+    border-radius: 48px;
+  }
+  .footer{
+    position: relative;
+    background-color: red;
+    margin-top: 16px;
+    padding: 8px;
+    box-sizing: border-box;
+    }
+  .footerItem{
+    color: #fff;
+    font-size: 20pt;
+    margin: 16px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: 0.3s;
+    }
+    .navbar-nav{
+      text-align: right;
+    }
+    .testimonial{
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .navbar{
+      background-color: black;
+      text-align: right;
+    }
+    .btn {
+      background-color: rgb(0,0,0) !important;
+    }
+    .navbarZZ .icon{
+    display: none;
+    }
+    @media(max-width: 880px){
+      .navitemZZ{
+          display: none;
+      }
+      .giZZ{
+          margin: 12px;
+          width: wrap;
+      }
+      .nds{
+          width: 100%;
+          display: block;
+          text-align: center;
+          margin: 16px 0px;
+      }
+      .newDialog{
+          flex-direction: column;
+          padding: 48px;
+      }
+      .navbarZZ .icon{
+          position: relative;
+          float: right;
+          right: 0;
+          top: 32px;
+          color: white;
+          font-size: 20pt;
+          display: block;
+      }
+    }
+    .navback{
+      height:96px;
+      background-color: black;
+    }
+  </style>
+  <body>
+    <!--<nav class="navbar navbar-expand-lg">
+      <img src="TEDxYouth@JNS LogoBOLD.svg" height="50px" width="auto">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="Home.html">Home <span class="sr-only">(current)</span></a>
+          <a class=" nav-item nav-link dropdown-toggle" href="speaker.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Speakers
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="speaker.html">2020</a>
+            <a class="dropdown-item" href="speaker.html">2019</a>
+            <a class="dropdown-item" href="speaker.html">2018</a>
+          </div>
+          <a class="nav-item nav-link" href="#">Team</a>
+        </div>
+      </div>
+    </nav>-->
+    <div id="navZZ" class="navbarZZ">
+      <img height="64" style="margin-top: 16px; margin-left: 64px; float: left" src="lg.svg" />
 
+      <a ><i href="javascript:void(0);" id="barZZ" class="fas fa-bars icon"></i></a>
+
+      <div id="respNav" class="respConZZ">
+          <a id="" href="https://tedxyouthjns.eventbrite.com" class="respZZ giZZ">Get tickets</a>
+          <!--<a id="" class="resp">Archive</a>-->
+          <!--<a id="" class="navitem ">Speakers</a>-->
+          <a id="" href="speaker.html" class="respZZ">Speakers</a>
+          <a id="" href="Blog/index.html" class="respZZ">Blog</a>
+          <a id="" href="OLD FILES/about.html" class="respZZ">About <span style="color: red; font-weight: 700">TEDx</span></a>
+          <a id="" href="index.html" class="respZZ">Home</a>
+      </div>
+        <a id="" href="https://tedxyouthjns.eventbrite.com" class="navitemZZ giZZ">Get tickets</a>
+        <!--<a id="" class="navitem ">Archive</a>-->
+        <!--<a id="" class="navitem ">Speakers</a>-->
+        <a id="" href="speaker.html" class="navitemZZ ">Speakers</a>
+        <a id="" href="blog/index.html" class="navitemZZ ">Blog</a>
+        <a id="" href="about.html" class="navitemZZ ">About <span style="color: red; font-weight: 700">TEDx</span></a>
+        <a id="" href="index.html" class="navitemZZ ">Home</a>
+    </div>
+    <div class="navback">
+
+    </div>
+        <div class="bgimg">
+        <div id="carouselExampleIndicators" class="carousel slide crs crsm" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class=""></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2" class="active"></li>
+          </ol>
+          <div class="carousel-inner crsm">
+            <div class="carousel-item">
+              <img src="8.png" height="100%" width="100%">
             </div>
-            <img height="64" style="margin-top: 16px; margin-left: 64px; float: left" src="lg.svg" />
-            <a id="" href="https://tedxyouthjns.eventbrite.com" class="navitem gi">Get tickets</a>
-            <!--<a id="" class="navitem ">Archive</a>-->
-            <!--<a id="" class="navitem ">Speakers</a>-->
-            <a id="" href="index.html" class="navitem ">Archive</a>
-            <a id="" href="blog/index.html" class="navitem ">Blog</a>
-            <a id="" href="about.html" class="navitem ">About <span style="color: red; font-weight: 700">TEDx</span></a>
-            <a id="" href="index.html" class="navitem ">Home</a>
-
+            <div class="carousel-item active">
+              <a href="SPEAKERS/akshay.html"><img src="Copy of Throwback to Akshay Ayre.png" height="100%" width="100%"></a>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
+      </div>
+      <div class="hcontent bgimg2">
+        <div class=texthc>
+        <span style="font-size: 30px; font-weight: 300; color:#FFF">&ldquo;COME GET ILLUMINATED&rdquo;</span>
+        <span style="font-size: 40px; font-weight: 900; font-family: Arial; color: red;">TEDx<span
+                style="color:#FFF; font-weight: 400; font-family: Helvetica;">Youth@JNS</span></span>
 
-
-
-        <div class="hcontent">
-            <span style="font-size: 30px; font-weight: 300;">&ldquo;COME GET ILLUMINATED&rdquo;</span>
-            <span style="font-size: 40px; font-weight: 900; font-family: Arial; color: red;">TEDx<span
-                    style="color: #FFF; font-weight: 400; font-family: Helvetica;">Youth@JNS</span></span>
-
-            <br />
-            <span class="s" style="font-size: 18px;">We're ecstatic to announce that TEDxYouth@JNS is growing, and is
-                now in its second edition! Created in the spirit of TED's mission, 'Ideas Worth Spreading,' and our
-                school motto, 'Knowledge is Strength Supreme', TEDxYouth@JNS exemplifies the conglomeration of
-                intellect-stimulating and groundbreaking ideas. TEDxYouth@JNS will be held on the <x
-                    style="background-color: purple;">17th of July, 2020, at Jamnabai Narsee School</x>. So get ready to
-                immerse yourself into a melting pot of a plethora of ideas and insights that will leave you inspired to
-                challenge conventional ideas and make a difference!</span>
+        <br />
+        <span class="s" style="font-size: 18px; color:#FFF;">Conversations today,
+          Revolutions tomorrow.
+          <br>
+          <br>
+          "Never underestimate the valuable and important difference you make in every life you touch. For the impact you make today has a powerful rippling effect on every tomorrow."
+          <br>
+          <br>
+          At TEDxYouth@JNS, our aim is to amplify the voices of the community and bring together the best minds to create a better tomorrow, for ourselves and for the world.
+          With the third edition of our TEDx event, we hope to take action and leave a resonating impact on this modern world! 
+          Abiding by our school’s motto, "Knowledge is strength supreme", we aim to share the ideas that are worth sharing and support change and arouse curiosity.
+          <br>
+          <br>
+          TEDxYouth@JNS aims to share this knowledge  through the visionary ideas and wisdom of our numerous speakers. TEDxYouth@JNS will be held on <strong>14th August, 2020</strong> at <strong>5p.m.</strong> .  
+          Get ready to embark on an enlightening and edifying experience from the comfort of your homes!
+          See the change, Be the change.</span>
         </div>
+      </div>
     </div>
-    <div id="iM" class="inviteMes">
-        <div style="align-self: center; max-width: 720px; width: 90%;">
-            <iframe
-                style="width: 100%; height: 480px; max-width: 720px; border: none;"
-                src="https://www.youtube.com/embed/videoseries?list=PLf_0nImcdtqFSdNEUf7VC4bu80Nz8s94S"></iframe>
+      <div class="container">
+        <h1 class="spkmarg" style="margin-top: 20px; margin-bottom: 10px; font-family: Arial, Helvetica, sans-serif;">Timeline</h1>
+      </div>
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="color: white;">
+                2020
+              </button>
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              4th April, 2020<br>
+              The TEDxYouth@JNS license was applied for by Primary Organizer, Rahael Braganza and Team Heads for the year 2020 were formally finalized. 
+              <br>
+              <br>
+              4th June, 2020<br>
+              TEDx issued the license for the TEDxYouth@JNS Event, 2020 and Rahael Braganza became the official Primary Organizer and Licensee of the event with Ms. Brinda Bose as Co-organizer. 
+              <br>
+              <br>
+              6th June, 2020<br>
+              Commencement of the Final Interviews to select the team members to constitute the Organizing Committee, 2020. Interviews were conducted by the Primary Organizer and Licensee, Team Heads and Members of the Advisory Committee of TEDxYouth@JNS. 
+              <br>
+              <br>
+              10th June, 2020<br>
+              The Organizing Committee of TEDxYouth@JNS 2020 was officiated and approved by the Principal and Teachers in charge. Introductory proceedings had commenced. 
+              <br>
+              <br>
+              19th June, 2020<br>
+              Social Media promotions of the event had started off with introductory posts on all three of our pages - Facebook, Instagram and Twitter and promotions were under way by word of mouth as well. 
+              <br>
+              <br>
+              23rd June, 2020<br>
+              The creation of a database of prospective speakers began to take shape. The work on the website and process of building social media presence was also under development. 
+              <br>
+              <br>
+              29th June, 2020<br>
+              The official decision of taking TEDxYouth@JNS 2020 online due to the coronavirus pandemic was made and informed. The date for the event was also set to the 14th of August, 2020. The deliberation of speakers was an on going process and the speaker guide was being formed. The team was also exploring myriad technological avenues in order to ascertain yet another successful event despite the current challenges.
+            </div>
+          </div>
         </div>
-
-        <!--<div class="spacer1"></div>
-            <div class="infoFI">
-                <x style ="font-weight: 600">Heyy! We are currently preparing for our next event! <br>
-                </x>-->
-    </div>
-    <div class="newDialog">
-        <span class="nds"><span class="version">1.0</span><span
-                style="font-weight: 100; color: #BDBDBD">September 8th 2018</span>
-            <span style="display: block;"><br>
-                The first TEDxYouth@JNS event was launched. 100 viwers + 2 viewing parties!
-                <br>An event organized solely by the students of Jamnabai Narsee School, this yada yada yada.
-            </span><br>
-        </span>
-        <span class="nds"><span class="version">1.1</span><span style="font-weight: 100; color: #BDBDBD">May 05
-                2019</span>
-            <span style="display: block;"><br>
-                We are glad to annouce that we have intergrated a new Blog into the TEDxYouth@JNS website. Where you can
-                get live updates from our teams,
-                organizers and speakers!
-            </span><br>
-        </span>
-        <span class="nds"><span class="version">1.2</span><span style="font-weight: 100; color: #BDBDBD">May 05
-                2019</span>
-            <span style="display: block;"><br>
-                Visit our Instagram handles where you will be able to get a glimpse about what goes into TEDxYouth@JNS.
-                Our lastest news and annoucements take place
-                on this handle hence it's an absolute must follow us at <a
-                    href="https://www.instagram.com/tedxyouthjns/?hl=en\">TEDxYouth@JNS/IG</a>
-            </span><br>
-        </span>
-
-
-    </div>
-    <div style="display: flex;flex-direction: column; align-items: center; margin-top: 16px;">
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color: white;">
+                2019
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">   
+              4/5/19<br>
+              An introductory meeting was conducted with the entire newly formed Organizing Committee and team members were allotted their respective teams. 
+              <br><br>
+              22/5/19<br>
+              BTS shooting and videos of the team in work commenced. 
+              <br><br>
+              24/5/19<br>
+              Finalising of speakers had begun. Distribution of tickets was underway. 
+              <br><br>
+              19/6/19<br>
+              Extensive social media promotions, especially on twitter, had started. 
+              <br><br>
+              2/7/19<br>
+              Practice runs for the event had begun. The team was procuring all materials required from school and was gearing up for event day. 
+              <br><br>
+              5/7/19<br>
+              Event day.<br>
+              TEDxYouth@JNS hosted it's second rendition which was even more successful than the previous one. Everything fell into place and the event progressed seamlessly. It was an exemplary team effort. 
+              <br><br>
+              22/7/19<br>
+              Post event work was underway. 'Thank you' cards were being created to be distributed to the school management and support staff for their constant assistance. 
+              <br><br>
+              28/8/19<br>   
+              Talks from the event were uploaded to TED and on YouTube as well. The playlists were made accessible and the keyword, "TEDxYouth@JNS"
+              was publicly searchable.
+              <br><br>
+              &nbsp;7/10/19<br>
+              &nbsp;Felicitation Ceremony was held to recognise the effort and hardwork put in by all team members to ascertain a successful event.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color: white;">
+                2018
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              September 8th, 2018
+              <br>The first TEDxYouth@JNS event was launched. 100 viewers + 2 viewing parties!
+              An event organized solely by the students of Jamnabai Narsee School.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex;flex-direction: column; align-items: center; margin-top: 16px;" class="timer">
         <div class="wrapper">
-            <div class="countdown" data-date="5-7-2019" data-time="09:00">
+            <div class="countdown" data-date="14-8-2020" data-time="00:00">
                 <div class="day"><span class="num"></span><span class="word"></span></div>
                 <div class="hour"><span class="num"></span><span class="word"></span></div>
                 <div class="min"><span class="num"></span><span class="word"></span></div>
@@ -204,96 +461,123 @@
             </div>
         </div>
     </div>
-
-
-
-    <div class="footer">
-        <div style="text-align: center">
-            <a href="https://github.com/lafeo/tedxyouthjns"><i title="Github: Developer info. + src"
-                    class="fab fa-github footerItem"></i></a>
-            <a href="https://www.instagram.com/tedxyouthjns/"><i title="Instagram"
-                    class="fab fa-instagram footerItem"></i></a>
-            <a href="https://www.facebook.com/tedxyouthjns/"><i title="Facebook"
-                    class="fab fa-facebook footerItem"></i></a>
-            <a href="https://wa.me/+912226187474/?text=I'm%20*name*.%20This%20is%20my%20introduction%20video!"><i
-                    title="Whatsapp: Message us!" class="fab fa-whatsapp footerItem"></i></a>
-            <a href="mailto:tedxyouthjns@jns.ac.in?"><i title="E-mail" class="far fa-envelope-open footerItem"></i></a>
+    <!--<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="3000">
+            <img src="_DSC1426.JPG" class="d-block spk crcpic">
+            <h5 class="spkmarg">Speaker Name</h5>
+            <p class="spkmarg">TALK DESCRIPTION</p>
+          </div>
+          <div class="carousel-item" data-interval="3000">
+            <img src="Disk_pack1.svg.png" class="d-block spk">
+            <h5 class="spkmarg">Speaker Name</h5>
+            <p class="spkmarg">TALK DESCRIPTION</p>
+          </div>
+          <div class="carousel-item"data-interval="3000" >
+            <img src="Disk_pack1.svg.png" class="d-block spk">
+            <h5 class="spkmarg">Speaker Name</h5>
+            <p class="spkmarg">TALK DESCRIPTION</p>
+          </div>
+          <div class="carousel-item"data-interval="3000" >
+            <img src="Disk_pack1.svg.png" class="d-block spk">
+            <h5 class="spkmarg">Speaker Name</h5>
+            <p class="spkmarg">TALK DESCRIPTION</p>
+          </div>
+          <div class="carousel-item"data-interval="3000" >
+            <img src="Disk_pack1.svg.png" class="d-block spk">
+            <h5 class="spkmarg">Speaker Name</h5>
+            <p class="spkmarg">TALK DESCRIPTION</p>
+          </div>
         </div>
-        <div style="text-align: center; margin-top: 24px;">
-            <span style="font-size: 8pt; color: white; width: 100"><a
-                    href="https://www.linkedin.com/in/raayaan-sahu-2b4796142/">Developer</a></span><br>
-            <span style="font-size: 8pt; color: white; width: 100%;">This independently organized TEDx event is operated
-                under license from TED</span>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>-->
+      <div id="carouselExampleControls" class="carousel slide testimonial" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="3000">
+            <h5 class="spkmarg">"There were various inspiring speeches and performances."</h5>
+            <p class="spkmarg">- Aaryan Shah<br>
+              #tedxyouthjns #tedxyouth #tedx #tedtalks</p>
+          </div>
+          <div class="carousel-item" data-interval="3000">
+            <h5 class="spkmarg">"Such a great initiative taken by JNS, <br> very inspiring and motivating.<br> Keep it up !!" </h5>
+            <p class="spkmarg">- Ronnit Agarwal<br>
+            #tedxyouthjns #tedxyouth #tedx #tedtalks</p>
+          </div>
+          <div class="carousel-item" data-interval="3000">
+            <h5 class="spkmarg">"The speakers are truly adorable. <br>The idea of bringing speakers from various fields is really appreciated, which allows us to open our perspectives. <br>Great arrangement !"</h5>
+            <p class="spkmarg">- Jash Rambhia<br>
+              #tedxyouthjns #tedxyouth #tedx #tedtalks</p>
+          </div>
+          <div class="carousel-item" data-interval="3000">
+            <h5 class="spkmarg">"TEDxYouth@JNS..... <br>Feel proud to be a silent part of your incredible journey !<br>God bless you !"</h5>
+            <p class="spkmarg">- Urvashi Nathany<br>
+              #tedxyouthjns #tedxyouth #tedx #tedtalks</p>
+          </div>
         </div>
-
-
-    </div>
-
-</body>
-
-<script>
-    var x = 0;
-    $("#bar").click(function () {
-
-        var t = this;
-        if (x == 0) {
-            t("#respNav").css("visibility", "visible").fadeIn(250);
-            t(".fa-bars").removeClass("fa-bars");
-            t(".icon").addClass("fa-times");
-            x = 1;
-        } else if (x == 1) {
-            t("#respNav").fadeOut(250);
-            t(".fa-times").removeClass("fa-times");
-            t(".icon").addClass("fa-bars");
-            x = 0;
-        }
-
-    }.bind($));
-
-    $(function () {
-        $(document).scroll(function () {
-            var $nav = $("#nav");
-            if ($(this).scrollTop() > $nav.height()) {
-                $nav.toggleClass('scroll', true);
-
-            } else {
-                $nav.toggleClass('scroll', false);
-
-            }
-        });
-    });
-    $(document).ready(function () {
-        var c = 0;
-        var slides = ["bg.jpg", "bg2.jpg", "bg3.jpg"];
-
-        var u1 = function () {
-            c++;
-            if (c >= slides.length) c = 0;
-            $(".dexs").fadeOut(1000, function () {
-                $(".dexs").css("background-image", "url(" + slides[c] + ")");
-                $(".dexs").fadeIn(1000);
-            });
-        }
-        setInterval(u1, 4000);
-        $("a").on('click', function (event) {
-
-            if (this.hash !== "") {
-
-                event.preventDefault();
-
-                var hash = this.hash;
-
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function () {
-
-                });
-            }
-        });
-
-    });
-</script>
-<script type="text/javascript" src="./countdown.js"></script>
-<script type="text/javascript" src="./init.js"></script>
-
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+        <!--<div class="card w-100" id="car" height="300px">
+          <div class="card-body" height="300px">
+            <img src="_DSC1426.JPG" class="float-left imgmargin" height="240px" width="160px">
+            <h5 class="card-title">Message by Primary Organizer</h5>
+            <p class="card-text overflow-auto sz">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eleifend lacus convallis felis rhoncus, sodales tristique lorem accumsan. Praesent eleifend interdum lacus, quis fermentum ex accumsan in. Nam dui urna, lacinia id elit pulvinar, viverra imperdiet lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla volutpat erat lobortis, gravida enim sit amet, iaculis libero. Duis vitae molestie libero. Integer sit amet diam id nulla eleifend tempus. Nam nec dignissim urna. Donec quis tortor arcu. Nulla vitae ligula placerat, mollis eros sed, rutrum quam. Ut et volutpat felis.</p>
+            <a href="#" class="btn btn-danger">Meet the Entire Team</a>
+          </div>
+        </div> -->
+        <div class="footer">
+          <div style="text-align: center">
+              <a href="https://github.com/lafeo/tedxyouthjns"><i title="Github: Developer info. + src"
+                      class="fab fa-github footerItem"></i></a>
+              <a href="https://www.instagram.com/tedxyouthjns/"><i title="Instagram"
+                      class="fab fa-instagram footerItem"></i></a>
+              <a href="https://www.facebook.com/tedxyouthjns/"><i title="Facebook"
+                      class="fab fa-facebook footerItem"></i></a>
+              <a href="https://wa.me/+912226187474/?text=I'm%20*name*.%20This%20is%20my%20introduction%20video!"><i
+                      title="Whatsapp: Message us!" class="fab fa-whatsapp footerItem"></i></a>
+              <a href="mailto:tedxyouthjns@jns.ac.in?"><i title="E-mail" class="far fa-envelope-open footerItem"></i></a>
+          </div>
+          <div style="text-align: center; margin-top: 24px;">
+              <!--<span stygit ple="font-size: 8pt; color: white; width: 100"><a
+                      href="https://www.linkedin.com/in/raayaan-sahu-2b4796142/">Developer</a></span><br>-->
+              <span style="font-size: 8pt; color: white; width: 100%;">This independently organized TEDx event is operated
+                  under license from TED</span>
+          </div>
+        </div>
+        <script>
+      var x = 0;
+    document.getElementById("barZZ").onclick=function() {
+      if(x==1){
+         document.getElementById("respNav").style.visibility="hidden";
+         document.getElementById("barZZ").classList.remove("fa-times")
+         document.getElementById("barZZ").classList.add("fa-bars")
+         x=0;
+      }
+      else if(x==0){
+         document.getElementById("respNav").style.visibility="visible";
+         document.getElementById("barZZ").classList.remove("fa-bars")
+         document.getElementById("barZZ").classList.add("fa-times")
+         x=1;
+      }
+    }
+   </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./countdown.js"></script>
+    <script type="text/javascript" src="./init.js"></script>
+  </body>
 </html>
