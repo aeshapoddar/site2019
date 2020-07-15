@@ -145,17 +145,13 @@
     padding-right: 64px;
     box-sizing: border-box;
     border-bottom: thin solid rgba(255, 255, 255, 0.2);
-    transition: 1s;
   }
   .respZZ {
     display: block;
     float: none;
     color: white;
     line-height: 56px;
- 
     font-size: 15pt;
- 
-    transition: 0.3s;
   }
   .respConZZ {
     box-sizing: border-box;
@@ -165,7 +161,6 @@
     top: 96px;
     width: 100%;
     text-align: center;
- 
     visibility: hidden;
   }
  

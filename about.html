@@ -82,6 +82,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
+    <link rel="stylesheet" href="OLD FILES/sheet.css" />
     <link rel="stylesheet" href="sheet.css" />
     <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
@@ -95,29 +96,28 @@
 <body>
     <div id="header">
         <img class="bg">
-        <div id="nav" class="navbar">
-            
-                <a href="javascript:void(0);" id="bar"><i class="fas fa-bars icon"></i></a>
-                <div id="respNav" class="respCon">  
-                        <a id="" href="https://tedxyouthjns.eventbrite.com" class="resp gi">Get tickets</a>
-                        <!--<a id="" class="resp">Archive</a>-->
-                        <!--<a id="" class="navitem ">Speakers</a>-->
-                        <a id="" href="index.html" class="resp">Archive</a>
-                        <a id="" href="index.html" class="resp">Blog</a>
-                        <a id="" href="about.html" class="resp">About <span style="color: red; font-weight: 700">TEDx</span></a>
-                        <a id="" href="index.html" class="resp">Home</a>
-                        
-                    </div>
-                <img height="64" style="margin-top: 16px; margin-left: 64px; float: left" src="lg.svg" />
-                <a id="" href="https://tedxyouthjns.eventbrite.com" class="navitem gi">Get tickets</a>
-                <!--<a id="" class="navitem ">Archive</a>-->
+        <div id="navZZ" class="navbarZZ">
+            <img height="64" style="margin-top: 16px; margin-left: 64px; float: left" src="lg.svg" />
+        
+            <a ><i href="javascript:void(0);" id="barZZ" class="fas fa-bars icon"></i></a>
+        
+            <div id="respNav" class="respConZZ">
+                <a id="" href="https://forms.gle/zVnRTij36Xzca3bB9" class="respZZ giZZ">Get tickets</a>
+                <!--<a id="" class="resp">Archive</a>-->
                 <!--<a id="" class="navitem ">Speakers</a>-->
-                <a id="" href="index.html" class="navitem ">Archive</a>
-                <a id="" href="blog/index.html" class="navitem ">Blog</a>
-                <a id="" href="about.html" class="navitem ">About <span style="color: red; font-weight: 700">TEDx</span></a>
-                <a id="" href="index.html" class="navitem ">Home</a>
-                
+                <a id="" href="speaker.html" class="respZZ">Speakers</a>
+                <a id="" href="Blog/index.html" class="respZZ">Blog</a>
+                <a id="" href="about.html" class="respZZ">About <span style="color: red; font-weight: 700">TEDx</span></a>
+                <a id="" href="index.html" class="respZZ">Home</a>
             </div>
+              <a id="" href="https://forms.gle/zVnRTij36Xzca3bB9" class="navitemZZ giZZ">Get tickets</a>
+              <!--<a id="" class="navitem ">Archive</a>-->
+              <!--<a id="" class="navitem ">Speakers</a>-->
+              <a id="" href="speaker.html" class="navitemZZ ">Speakers</a>
+              <a id="" href="blog/index.html" class="navitemZZ ">Blog</a>
+              <a id="" href="about.html" class="navitemZZ ">About <span style="color: red; font-weight: 700">TEDx</span></a>
+              <a id="" href="index.html" class="navitemZZ ">Home</a>
+          </div>
     
     <div class="content">
         <div class="content1">
@@ -162,42 +162,19 @@
 </body>
 <script>
     var x = 0;
-        $("#bar").click(function (){
-        
-
-        if(x == 0){
-            $("#respNav").css("visibility", "visible").fadeIn(250);
-            $(".fa-bars").removeClass("fa-bars");
-            $(".icon").addClass("fa-times");
-            x = 1;
-        }
-        else if(x == 1){
-            $("#respNav").fadeOut(250);
-            $(".fa-times").removeClass("fa-times");
-            $(".icon").addClass("fa-bars");
-            x = 0;
-        }
-        
-    });
-    $(function () {
-        function dropOrNawt(){
-        var x = document.getElementById("nav");
-        if(x.className == "navbar")
-            x.className += "resp";
-        else
-            x.className = "navbar";
+  document.getElementById("barZZ").onclick=function() {
+    if(x==1){
+       document.getElementById("respNav").style.visibility="hidden";
+       document.getElementById("barZZ").classList.remove("fa-times")
+       document.getElementById("barZZ").classList.add("fa-bars")
+       x=0;
     }
-        $(document).scroll(function () {
-            console.log("DS");
-            var $nav = $("#nav");
-            if ($(this).scrollTop() > $nav.height()) {
-                $nav.toggleClass('scroll', true);
-                
-            } else {
-                $nav.toggleClass('scroll', false);
-                
-            }
-        });
-    });
-</script>
+    else if(x==0){
+       document.getElementById("respNav").style.visibility="visible";
+       document.getElementById("barZZ").classList.remove("fa-bars")
+       document.getElementById("barZZ").classList.add("fa-times")
+       x=1;
+    }
+  }
+ </script>
 </html>
