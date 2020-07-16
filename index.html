@@ -175,7 +175,7 @@
   .respConZZ {
     box-sizing: border-box;
     border-bottom: thin solid rgba(255, 255, 255, 0.2);
-    background-color: rgba(0, 0, 0, 0.8) !important;
+    background-color: rgba(0, 0, 0, 0.9) !important;
     position: fixed;
     top: 96px;
     width: 100%;
@@ -303,7 +303,7 @@
     </div>
         <div class="bgimg">
         <div id="carouselExampleIndicators" class="carousel slide crs crsm" data-ride="carousel">
-          <ol class="carousel-indicators">
+          <ol class="carousel-indicators" id="Whitebarthingy">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class=""></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2" class="active"></li>
           </ol>
@@ -562,12 +562,14 @@
     document.getElementById("barZZ").onclick=function() {
       if(x==1){
          document.getElementById("respNav").style.visibility="hidden";
+         document.getElementById("Whitebarthingy").style.visibility="visible";
          document.getElementById("barZZ").classList.remove("fa-times")
          document.getElementById("barZZ").classList.add("fa-bars")
          x=0;
       }
       else if(x==0){
          document.getElementById("respNav").style.visibility="visible";
+         document.getElementById("Whitebarthingy").style.visibility="hidden";
          document.getElementById("barZZ").classList.remove("fa-bars")
          document.getElementById("barZZ").classList.add("fa-times")
          x=1;
