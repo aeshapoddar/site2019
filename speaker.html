@@ -20,8 +20,10 @@
       </head>
 
       <style>
-        *  @media screen and (max-width: 900px){
+          @media screen and (max-width: 900px){
+            *{
              box-sizing: border-box;
+            }
            }
 
            .bs-example{
@@ -200,7 +202,7 @@
       <!--<a id="" class="navitem ">Archive</a>-->
       <!--<a id="" class="navitem ">Speakers</a>-->
       <a id="" href="speaker.html" class="navitemZZ ">Speakers</a>
-      <a id="" href="blog/index.html" class="navitemZZ ">Blog</a>
+      <a id="" href="Blog/index.html" class="navitemZZ ">Blog</a>
       <a id="" href="about.html" class="navitemZZ ">About <span style="color: red; font-weight: 700">TEDx</span></a>
       <a id="" href="index.html" class="navitemZZ ">Home</a>
   </div>
@@ -222,7 +224,7 @@
    <div class="accordian" id="accordionExample">
 
     <div class="card" >
-      <div class="card-header" id="headingOne"  style="background-color: black;" style="align-content: center;">
+      <div class="card-header" data-toggle="collapse" href="#collapseOne" id="headingOne"  style="background-color: black;" style="align-content: center;">
         <a class="card-link" data-toggle="collapse" href="#collapseOne">
           <b>
           2020
@@ -238,7 +240,7 @@
     </div>
     
     <div class="card" >
-      <div class="card-header"  id="headingTwo"  style="background-color: black;" >
+      <div class="card-header" data-toggle="collapse" href="#collapseTwo"  id="headingTwo"  style="background-color: black;" >
         <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
           <b>
           2019
@@ -366,7 +368,7 @@
 </div>
 
     <div class="card">
-      <div class="card-header" id="headingThree"  style="background-color: black;" >
+      <div class="card-header" id="headingThree" data-toggle="collapse" href="#collapseThree" style="background-color: black;" >
         <a role="button" class="collapsed show" data-toggle="collapse" href="#collapseThree">
           <b>
           2018
