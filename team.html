@@ -91,6 +91,7 @@
   margin-top: 16px;
   padding: 8px;
   box-sizing: border-box;
+  width:100%;
   }
 .footerItem{
   color: #fff;
@@ -157,17 +158,35 @@
       font-size: 16px;
       padding: 5px;
   }
-  @media(max-width: 500px){
+  .text{
+      border-bottom-left-radius: 10%;
+      border: 1px solid #BFBFBF !important;
+      box-shadow: 5px 5px 5px #aaaaaa !important;
+  }
+  .w3-display-topleft{
+    border: 1px solid #BFBFBF !important;
+    box-shadow: 1px 2px 5px #aaaaaa !important;
+  }
+  @media (max-width: 500px){
+    .mainhead{
+          margin-bottom: -30% !important;
+          margin-top: -35% !important;
+      }
+  }
+  @media(max-width: 800px){
       .col-md-3{
           margin-bottom: 40px;
           width: 40%;
-          margin-left: 5%; 
+          margin-left: 8%; 
+      }
+      .peepimg{
+          margin-left: 30% !important;
       }
       .mainhead{
-          height: 300px !important;
-          width: 300px !important;
-          margin-bottom: -45% !important;
-          margin-top: -35% !important;
+          height: 20% !important;
+          width: 90% !important;
+          margin-bottom: -30%;
+          margin-top: -20%;
       }
       .name{
           margin-top: -20px;
@@ -176,6 +195,12 @@
       .heading{
           font-size: 12px;
       }
+  }
+  .card-img-top{
+     border-bottom-left-radius: 5%;
+     border: 1px solid #BFBFBF !important;
+     background-color: white !important;
+     box-shadow: 5px 5px 10px #aaaaaa !important;
   }
 </style>
 
@@ -206,23 +231,22 @@
           <a id="" href="Blog/index.html" class="navitemZZ ">Blog</a>
           <a id="" href="about.html" class="navitemZZ ">About <span style="color: red; font-weight: 700">TEDx</span></a>
           <a id="" href="index.html" class="navitemZZ ">Home</a>
-          
-      </div>
+    </div>  
         <div class="navback">
     
         </div>
     
     <section class="ftco-section" id="speakers-section">
 		<div class="container">
-			<div class="row justify-content-center mb-5 pb-5">
-					<img src="B11B40B0-B9B0-42F4-AA5F-8176995AD815.png" style="height: 600px; width: 600px; margin-top: -25%; margin-bottom: -30%;"class="mainhead">
+			<div class="row justify-content-center">
+					<img src="B11B40B0-B9B0-42F4-AA5F-8176995AD815.png" style="height: 600px; width: 600px; margin-top: -250px; margin-bottom: -250px;"class="mainhead">
             </div>
 
-            <div class="col-md-3 d-flex ftco-animate  peepimg">
+            <div class="col-md-3 d-flex ftco-animate  peepimg" style="margin-left: 40%;">
                 <div class="blog-entry justify-content-end">
                 <div class="w3-display-topleft w3-black w3-padding name">Rahael Braganza</div>
                 <a class="block-20"> 
-                 <img class="card-img-top" alt="Rahael Braganza"  src="rahael.jpeg">
+                 <img class="card-img-top" alt="Rahael Braganza"  src="rahael.jpg">
                 </a>
                     <div class="text float-right d-block shadow-lg">
                         <h5 class="heading">Primary Organizer and Licensee</h>
@@ -236,7 +260,7 @@
                                 <div class="blog-entry justify-content-end">
                                 <div class="w3-display-topleft w3-black w3-padding name">Jaiditya Khemani</div>
                                 <a class="block-20"> 
-                                 <img class="card-img-top peepimg" alt="Jaiditya Khemani" src="_DSC1426.JPG">
+                                 <img class="card-img-top" alt="Jaiditya Khemani" src="WhatsApp Image 2020-07-30 at 15.59.15.jpeg">
                                 </a>
                                     <div class="text float-right d-block shadow-lg">
                                         <h5 class="heading">Executive Producer and Website Manager</h>
@@ -247,10 +271,10 @@
                                 <div class="blog-entry justify-content-end">
                                 <div class="w3-display-topleft w3-black w3-padding name">Aditya Banerjee</div>
                                 <a class="block-20"> 
-                                 <img class="card-img-top peepimg" alt=" Aditya Banerjee" src="aditya.jpeg">
+                                 <img class="card-img-top" alt=" Aditya Banerjee" src="IMG-20200726-WA0021.jpg">
                                 </a>
                                     <div class="text float-right d-block shadow-lg">
-                                        <h5 class="heading">Operations Head</h>
+                                        <h5 class="heading">Event Manager</h>
                                     </div>
                                 </div>
                             </div>
@@ -258,7 +282,7 @@
                                 <div class="blog-entry justify-content-end">
                                 <div class="w3-display-topleft w3-black w3-padding name">Aryan Hosangady</div>
                                 <a class="block-20"> 
-                                 <img class="card-img-top" alt="Aryan Hosangady" src="aryan.jpeg">
+                                 <img class="card-img-top" alt="Aryan Hosangady" src="IMG-20200703-WA0059.jpg">
                                 </a>
                                     <div class="text float-right d-block shadow-lg">
                                         <h5 class="heading">Budget Manager</h>
@@ -270,7 +294,7 @@
                                 <div class="blog-entry justify-content-end">
                                 <div class="w3-display-topleft w3-black w3-padding name">Stuti Sinha</div>
                                 <a class="block-20"> 
-                                 <img class="card-img-top" alt="Stuti Sinha" src="stuti.jpeg">
+                                 <img class="card-img-top" alt="Stuti Sinha" src="IMG-20200703-WA0033.jpg">
                                 </a>
                                     <div class="text float-right d-block shadow-lg">
                                         <h5 class="heading">Communications, Marketing and Public Relations Head</h>
@@ -283,39 +307,39 @@
                     </div>
 
                     <div class="container">
-                        <div class="row justify-content-center mb-5 pb-5">
-                            <img src="D9B9F4FA-C1C5-4F5A-A030-0CFB98D00221.png" style="height: 600px; width: 600px; margin-top: -25%; margin-bottom: -30%;"class="mainhead">
+                        <div class="row justify-content-center">
+                            <img src="D9B9F4FA-C1C5-4F5A-A030-0CFB98D00221.png" style="height: 600px; width: 600px; margin-top: -200px; margin-bottom: -250px;"class="mainhead">
                         </div>
                     <div class="row d-flex">
                                 <div class="col-md-3 d-flex ftco-animate">
                                 <div class="blog-entry justify-content-end">
-                                    <div class="w3-display-topleft w3-black w3-padding name">Miss Brindaa Bose</div>
+                                    <div class="w3-display-topleft w3-black w3-padding name">Ms. Brinda Bose Sengupta</div>
                                     <a class="block-20"> 
-                                     <img class="card-img-top"  alt="Miss Brindaa Bose" src="miss brindaa.jpeg"><br><br>
+                                     <img class="card-img-top"  alt="Miss Brinda Bose" src="IMG-20200702-WA0005.jpg"><br><br>
                                     </a>
                                     </div>
                                 </div>
                                 <div class="col-md-3 d-flex ftco-animate">
                                     <div class="blog-entry justify-content-end">
-                                    <div class="w3-display-topleft w3-black w3-padding name">Miss Minu Joshi</div>
+                                    <div class="w3-display-topleft w3-black w3-padding name">Ms. Minu Joshi</div>
                                     <a class="block-20"> 
-                                     <img class="card-img-top" alt="Miss Minu Joshi" src="miss minu.jpeg">
+                                     <img class="card-img-top" alt="Miss Minu Joshi" src="IMG-20200704-WA0004.jpg">
                                     </a>
                                     </div>
                                 </div>
                                 <div class="col-md-3 d-flex ftco-animate">
                                     <div class="blog-entry justify-content-end">
-                                    <div class="w3-display-topleft w3-black w3-padding name">Miss Geetan</div>
+                                    <div class="w3-display-topleft w3-black w3-padding name">Ms. Geetan Bharadwaj</div>
                                     <a class="block-20"> 
-                                     <img class="card-img-top" alt="Miss Geetan" src="miss geetan.jpeg">
+                                     <img class="card-img-top" alt="Miss Geetan" src="IMG-20200703-WA0031.jpg">
                                     </a>
                                     </div>
                                 </div>
                                 <div class="col-md-3 d-flex ftco-animate">
                                     <div class="blog-entry justify-content-end">
-                                    <div class="w3-display-topleft w3-black w3-padding name">Mitesh Bhatt</div>
+                                    <div class="w3-display-topleft w3-black w3-padding name">Mr. Mitesh Bhatt</div>
                                     <a class="block-20"> 
-                                     <img class="card-img-top" alt="Mitesh Bhatt" src="mitesh sir.jpeg">
+                                     <img class="card-img-top" alt="Mitesh Bhatt" src="IMG-20200704-WA0009.jpg">
                                     </a>
                                     </div>
                                  </div>
@@ -324,15 +348,15 @@
                     </div>
 
                     <div class="container">
-                        <div class="row justify-content-center mb-5 pb-5">
-                            <img src="F5294C32-FDF2-4AC2-B426-FACC704016D4.png" style="height: 600px; width: 600px; margin-top: -25%; margin-bottom: -30%;"class="mainhead">
+                        <div class="row justify-content-center">
+                            <img src="F5294C32-FDF2-4AC2-B426-FACC704016D4.png" style="height: 600px; width: 600px; margin-top: -200px; margin-bottom: -250px;"class="mainhead">
                         </div>
-                    <div class="row d-flex">
+                        <div class="row d-flex">
                                                 <div class="col-md-3 d-flex ftco-animate">
                                     <div class="blog-entry justify-content-end">
                                     <div class="w3-display-topleft w3-black w3-padding name">Kashish Jain</div>
                                     <a class="block-20"> 
-                                     <img class="card-img-top" alt="Kashish Jain" src="kashish_jain.jpeg">
+                                     <img class="card-img-top" alt="Kashish Jain" src="IMG-20200726-WA0014.jpg">
                                     </div>
                                 </div>
                                 <div class="col-md-3 d-flex ftco-animate">
@@ -347,7 +371,7 @@
                                     <div class="blog-entry justify-content-end">
                                     <div class="w3-display-topleft w3-black w3-padding name">Jai Mirchandani</div>
                                     <a class="block-20"> 
-                                     <img class="card-img-top"  alt="Jai Mirchandani" src="jai.jpeg">
+                                     <img class="card-img-top"  alt="Jai Mirchandani" src="IMG-20200726-WA0008.jpg">
                                     </a>
                                     </div>
                                 </div>
@@ -355,7 +379,7 @@
                                     <div class="blog-entry justify-content-end">
                                     <div class="w3-display-topleft w3-black w3-padding name">Asmi Shah</div>
                                     <a class="block-20"> 
-                                     <img class="card-img-top" height="95%" alt="Asmi Shah" src="asmi.jpeg">
+                                     <img class="card-img-top" height="95%" alt="Asmi Shah" src="IMG-20200726-WA0007.jpg">
                                     </a>
                                     </div>
                                 </div>
@@ -363,7 +387,7 @@
                                     <div class="blog-entry justify-content-end">
                                     <div class="w3-display-topleft w3-black w3-padding name">Ishaan Salian</div>
                                     <a class="block-20"> 
-                                     <img class="card-img-top" alt="Ishaan Salian" src="ishaan.jpeg"><br><br>
+                                     <img class="card-img-top" alt="Ishaan Salian" src="IMG-20200726-WA0020.jpg"><br><br>
                                     </a>
                                     </div>
                                 </div>
@@ -371,7 +395,7 @@
                                     <div class="blog-entry justify-content-end">
                                     <div class="w3-display-topleft w3-black w3-padding name">Anusha Kala</div>
                                     <a class="block-20"> 
-                                     <img class="card-img-top" alt="Anusha Kala" src="anusha.jpeg">
+                                     <img class="card-img-top" alt="Anusha Kala" src="IMG-20200726-WA0016.jpg">
                                     </a>
                                     </div>
                                 </div>
@@ -379,7 +403,7 @@
                                     <div class="blog-entry justify-content-end">
                                     <div class="w3-display-topleft w3-black w3-padding name">Jahnavi Bali</div>
                                     <a class="block-20"> 
-                                     <img class="card-img-top" alt="Jahnavi Bali" src="jahnavi.jpeg">
+                                     <img class="card-img-top" alt="Jahnavi Bali" src="IMG-20200724-WA0020.jpg">
                                     </a>
                                     </div>
                                 </div>
@@ -387,7 +411,7 @@
                                     <div class="blog-entry justify-content-end">
                                     <div class="w3-display-topleft w3-black w3-padding name">Avanti Nayal</div>
                                     <a class="block-20"> 
-                                     <img class="card-img-top" height="95%" alt="Avanti Nayal"  src="avanti.jpeg">
+                                     <img class="card-img-top" height="95%" alt="Avanti Nayal"  src="IMG-20200725-WA0071.jpg">
                                     </a>
                                     </div>
                                 </div>
@@ -395,7 +419,7 @@
                                     <div class="blog-entry justify-content-end">
                                     <div class="w3-display-topleft w3-black w3-padding name">Dhruv Manshani</div>
                                     <a class="block-20"> 
-                                     <img class="card-img-top" alt="Dhruv Manshani"  src="dhruv.jpeg">
+                                     <img class="card-img-top" alt="Dhruv Manshani"  src="IMG-20200726-WA0017.jpg">
                                     </a>
                                     </div>
                                 </div>
@@ -403,7 +427,7 @@
                                     <div class="blog-entry justify-content-end">
                                     <div class="w3-display-topleft w3-black w3-padding name">Kashish Jumani</div>
                                     <a class="block-20"> 
-                                     <img class="card-img-top" alt="Kashish Jumani"  src="kashish.jpeg"><br><br>
+                                     <img class="card-img-top" alt="Kashish Jumani"  src="IMG-20200726-WA0003.jpg"><br><br>
                                     </a>
                                     </div>
                                 </div>
@@ -411,7 +435,7 @@
                                     <div class="blog-entry justify-content-end">
                                     <div class="w3-display-topleft w3-black w3-padding name">Karan Kapadia</div>
                                     <a class="block-20"> 
-                                     <img class="card-img-top" alt="Karan Kapadia"  src="karan.jpeg">
+                                     <img class="card-img-top" alt="Karan Kapadia"  src="IMG-20200726-WA0006.jpg">
                                     </a>
                                     </div>
                                 </div>
@@ -419,7 +443,7 @@
                                     <div class="blog-entry justify-content-end">
                                     <div class="w3-display-topleft w3-black w3-padding name">Arian Fernandes</div>
                                     <a class="block-20"> 
-                                     <img class="card-img-top" alt="Arian Fernandes"  src="arian.jpeg">
+                                     <img class="card-img-top" alt="Arian Fernandes"  src="IMG-20200725-WA0072.jpg">
                                     </a>
                                     </div>
                                 </div>
@@ -435,7 +459,7 @@
                                     <div class="blog-entry justify-content-end">
                                     <div class="w3-display-topleft w3-black w3-padding name">Shashank Manian</div>
                                     <a class="block-20"> 
-                                     <img class="card-img-top" alt="Shashank Manian" src="shashank.jpeg"><br><br><br>
+                                     <img class="card-img-top" alt="Shashank Manian" src="IMG-20200726-WA0004.jpg"><br><br><br>
                                     </a>
                                     </div>
                                 </div>
@@ -443,7 +467,7 @@
                                     <div class="blog-entry justify-content-end">
                                     <div class="w3-display-topleft w3-black w3-padding name">Tarini Duvvuri</div>
                                     <a class="block-20"> 
-                                     <img class="card-img-top" alt="Tarini Duvvuri"  src="tarini.jpeg"><br><br><br>
+                                     <img class="card-img-top" alt="Tarini Duvvuri"  src="IMG-20200726-WA0015.jpg"><br><br><br>
                                     </a>
                                     </div>
                                 </div>
@@ -451,7 +475,7 @@
                                     <div class="blog-entry justify-content-end">
                                     <div class="w3-display-topleft w3-black w3-padding name">Thea Dhanki</div>
                                     <a class="block-20"> 
-                                     <img class="card-img-top" alt="Thea Dhanki" src="thea_1.jpeg"><br><br><br>
+                                     <img class="card-img-top" alt="Thea Dhanki" src="IMG-20200727-WA0000.jpg"><br><br><br>
                                     </a>
                                     </div>
                                 </div>
@@ -459,7 +483,7 @@
                                     <div class="blog-entry justify-content-end">
                                     <div class="w3-display-topleft w3-black w3-padding name">Piushi Ajwani</div>
                                     <a class="block-20"> 
-                                     <img class="card-img-top" alt="Piushi Ajwani"  src="piuishi.jpeg">
+                                     <img class="card-img-top" alt="Piushi Ajwani"  src="IMG-20200726-WA0013.jpg">
                                     </a>
                                     </div>
                                 </div>
@@ -467,7 +491,7 @@
                                     <div class="blog-entry justify-content-end">
                                     <div class="w3-display-topleft w3-black w3-padding name">Amaara Pundir</div>
                                     <a class="block-20"> 
-                                     <img class="card-img-top" alt="Amaara Pundir"  src="amaara.jpeg"><br><br>
+                                     <img class="card-img-top" alt="Amaara Pundir"  src="WhatsApp Image 2020-07-31 at 13.07.58.jpeg"><br><br>
                                     </a>
                                     </div>
                                 </div>
@@ -475,7 +499,7 @@
                                     <div class="blog-entry justify-content-end">
                                     <div class="w3-display-topleft w3-black w3-padding name">Aryan Trehan</div>
                                     <a class="block-20"> 
-                                     <img class="card-img-top" alt="Aryan Trehan" src="trehan.jpeg">
+                                     <img class="card-img-top" alt="Aryan Trehan" src="IMG-20200726-WA0012.jpg">
                                     </a>
                                     </div>
                                 </div>
@@ -483,7 +507,7 @@
                                     <div class="blog-entry justify-content-end">
                                     <div class="w3-display-topleft w3-black w3-padding name">Dhruvi Kapadia</div>
                                     <a class="block-20"> 
-                                     <img class="card-img-top" alt="Dhruvi Kapadia" src="dhruvi.jpeg">
+                                     <img class="card-img-top" alt="Dhruvi Kapadia" src="IMG-20200725-WA0076.jpg">
                                     </a>
                                     </div>
                                 </div>
@@ -515,6 +539,34 @@
         </div>
       </div>
     <!-- Optional JavaScript -->
+    <script>
+        var x = 0;
+        document.getElementById("barZZ").onclick=function() {
+        if(x==1){
+           document.getElementById("respNav").style.visibility="hidden";
+           document.getElementById("barZZ").classList.remove("fa-times")
+           document.getElementById("barZZ").classList.add("fa-bars")
+           x=0;
+        }
+        else if(x==0){
+           document.getElementById("respNav").style.visibility="visible";
+           document.getElementById("barZZ").classList.remove("fa-bars")
+           document.getElementById("barZZ").classList.add("fa-times")
+           x=1;
+        }
+      }
+      function myFunction(y) {
+       if (y.matches) { // If media query matches
+        document.getElementsByClassName("mainhead").style.height="400px !important"
+        document.getElementsByClassName("mainhead").style.width="400px !important"
+        document.getElementsByClassName("mainhead").style.marginBottom="-30% !important"
+        document.getElementsByClassName("mainhead").style.marginTop="-20% !important"
+        }
+    }
+    var y = window.matchMedia("(min-width: 800px)")
+    myFunction(y) // Call listener function at run time
+    y.addListener(myFunction)// Attach listener function on state changes
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
