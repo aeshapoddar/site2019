@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <title>TEDxYouth@JNS Speakers</title>
+        <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+        
+    
+      </head>
+
+      <style>
+          @media screen and (max-width: 900px){
+            *{
+             box-sizing: border-box;
+            }
+           }
+
+           .bs-example{
+              margin: 60px;
+             
+           }
+
+           body {
+             font-family: Arial, Helvetica, sans-serif;
+             background-color: black
+           }
+           
+           /* Float four columns side by side */
+           .column {
+             float: left;
+             width: 25%;
+             padding: 0 10px;
+           }
+           
+           /* Remove extra left and right margins, due to padding */
+           .row {margin: 0 -5px;}
+           
+           /* Clear floats after the columns */
+           .row:after {
+             content: "";
+             display: table;
+             clear: both;
+           }
+           
+           /* Responsive columns */
+           @media screen and (max-width: 900px) {
+             .column {
+               width: 100%;
+               display: block;
+               margin-bottom: 20px;
+             }
+           }
+           
+           /* Style the counter cards */
+           .card {
+             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+             padding: 16px;
+           }
+
+           .card-header{
+             color: white;
+             font-weight: bolder;
+           }
+
+           p.c {
+            color:black;
+             font-weight: bolder;
+           font-style: oblique;
+           text-align: center;
+           }
+
+            .footerItem{
+              color: #fff;
+              font-size: 20pt;
+              margin: 16px;
+              cursor: pointer;
+              box-sizing: border-box;
+              transition: 0.3s;
+              }
+              .giZZ {
+              border-radius: 12px;
+              height: 48px !important;
+              margin-top: 24px;
+              margin-left: 16px;
+              line-height: 48px !important;
+               background-color: rgba(255, 255, 255, 0.1);
+              }
+  .navbarZZ {
+    height: 96px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.8);
+    padding-right: 64px;
+    box-sizing: border-box;
+    border-bottom: thin solid rgba(255, 255, 255, 0.2);
+    transition: 1s;
+  }
+  .navitemZZ{
+    height: 96px;
+    width: auto;
+    box-sizing: border-box;
+    line-height: 96px;
+    color: #fff;
+ 
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    float: right;
+    padding: 0px 24px;
+  }
+  .respZZ {
+    display: block;
+    float: none;
+    color: white;
+    line-height: 56px;
+    font-size: 15pt;
+  }
+  .respConZZ {
+    box-sizing: border-box;
+    border-bottom: thin solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    position: fixed;
+    top: 96px;
+    width: 100%;
+    text-align: center;
+    visibility: hidden;
+  }
+  .navitemZZ:hover .respZZ:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+  }
+ 
+  .giZZ:hover {
+    background-color: #e91e63;
+    border-radius: 48px;
+  }
+  .navbarZZ .icon{
+    display: none;
+    }
+    @media(max-width: 880px){
+      .navitemZZ{
+          display: none;
+      }
+      .giZZ{
+          margin: 12px;
+          width: wrap;
+      }
+      .nds{
+          width: 100%;
+          display: block;
+          text-align: center;
+          margin: 16px 0px;
+      }
+      .newDialog{
+          flex-direction: column;
+          padding: 48px;
+      }
+      .navbarZZ .icon{
+          position: relative;
+          float: right;
+          right: 0;
+          top: 32px;
+          color: white;
+          font-size: 20pt;
+          display: block;
+      }
+    }
+    .navback{
+      height:80px;
+      background-color: black;
+    }
+          </style>
+
+<body>
+  <div id="navZZ" class="navbarZZ">
+    <img height="64" style="margin-top: 16px; margin-left: 64px; float: left" src="lg.svg" />
+
+    <a ><i href="javascript:void(0);" id="barZZ" class="fas fa-bars icon"></i></a>
+
+    <div id="respNav" class="respConZZ">
+        <a id="" href="https://forms.gle/zVnRTij36Xzca3bB9" class="respZZ giZZ">Get tickets</a>
+        <!--<a id="" class="resp">Archive</a>-->
+        <!--<a id="" class="navitem ">Speakers</a>-->
+        <a id="" href="team.html" class="respZZ">Team</a>
+        <a id="" href="speaker.html" class="respZZ">Speakers</a>
+        <a id="" href="Blog/index.html" class="respZZ">Blog</a>
+        <a id="" href="about.html" class="respZZ">About <span style="color: red; font-weight: 700">TEDx</span></a>
+        <a id="" href="index.html" class="respZZ">Home</a>
+        
+    </div>
+      <a id="" href="https://forms.gle/zVnRTij36Xzca3bB9" class="navitemZZ giZZ">Get tickets</a>
+      <!--<a id="" class="navitem ">Archive</a>-->
+      <!--<a id="" class="navitem ">Speakers</a>-->
+      <a id="" href="team.html" class="navitemZZ ">Team</a>
+      <a id="" href="speaker.html" class="navitemZZ ">Speakers</a>
+      <a id="" href="Blog/index.html" class="navitemZZ ">Blog</a>
+      <a id="" href="about.html" class="navitemZZ ">About <span style="color: red; font-weight: 700">TEDx</span></a>
+      <a id="" href="index.html" class="navitemZZ ">Home</a>
+      
+  </div>
+    <div class="navback">
+
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+            <div class="col-md-7 heading-section text-center ftco-animate">
+                <div class="container">
+                   <img src="img12.jpeg" width="100%" style="margin-bottom: -100px !important;">
+                  </div>
+             </div>
+        </div>
+    </div>
+
+<div class="bs-example">
+   <div class="accordian" id="accordionExample">
+
+    <div class="card" >
+      <div class="card-header" data-toggle="collapse" href="#collapseOne" id="headingOne"  style="background-color: black;" style="align-content: center;">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+          <b>
+          2020
+        </b>
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+        <div class="card-body">
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                  <img class="card-img-top" alt=" Avani Dalal" src="avani dalal.jpeg" > 
+                  <div class="card-body">
+                      <h4 class="card-title">Avani Dalal</h4>
+                      <p class="card-text" style="font-size: 12px;">
+                        “You can only hope for a change if you have sown the seeds of change.” 
+                        With that thought in mind, she has been striving hard to make changes at
+                         grass-root levels since 2015 as the co-founder trustee of Spark-A-Change 
+                         Foundation, a 5 year old Mumbai-based NGO registered as a Charitable Trust
+                          under the Bombay Public Trust Act,1950. She enjoys working with the SAC 
+                          core team for generating awareness about campaigns, curating SAC curriculum, 
+                          fund-raising and provide overall development with after-school and in-school 
+                          programmes to 520 underprivileged children with the help of 60 committed
+                           volunteers. 
+                      </p>
+                  </div>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                  <img class="card-img-top" alt="Captain Rishabh Kapur" src="capt.jpeg">
+                  <div class="card-body">
+                      <h4 class="card-title">Captain Rishabh Kapur</h4>
+                      <p class="card-text" style="font-size: 12px;">
+                        Captain Rishabh Kapur is one of the many unsung heroes that have helped 
+                        unite thousands of families in india by being part of the Vande Bharat 
+                        Mission during the Corona Virus Pandemic. He also executed operation RAHAT, 
+                        which was the most complex evacuation ever in Indian Aviation during the Yemen 
+                        Crisis. When it comes to serving the nation, even the sky is not the limit for
+                         him.
+                      </p>
+                      
+                  </div>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                  <img class="card-img-top" alt="Brian Tellis " src="brian tellis.jpeg">
+                  <div class="card-body">
+                      <h4 class="card-title">Brian Tellis </h4>
+                      <p class="card-text" style="font-size: 12px;">
+                        Brian Tellis is an unparalled pioneer in the events and entertainment 
+                        industry with over 3 decades of experience .He has co-founded and  served  
+                        as the President of Fountainhead Promotions and Events Pvt Ltd . Brian is 
+                        also an accomplished emcee,musician and has several other accomplishments 
+                        under his belt .We can't wait to see what Brian has in store for us and we
+                        \ are looking forward to his talk on the 14th Of August at TEDxYouth@JNS 2020!
+                      <p>
+                  </div>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                  <img class="card-img-top" alt="Kartik Desai" src="Kartik Desai .jpg">
+                  <div class="card-body">
+                      <h4 class="card-title">Kartik Desai</h4>
+                      <p class="card-text" style="font-size: 12px;">
+                        Kartik, born in Delhi and raised in Geneva and New York, leads Asha Impact, 
+                        an impact investing and policy advocacy platform for major Indian business 
+                        leaders, UHNIs and philanthropists to invest in scalable, for-profit social 
+                        enterprises. A Wharton and Columbia University graduate who started his career 
+                        with Merrill Lynch, he is considered a pioneer of the impact financing ecosystem
+                         in India, having worked at the two largest impact funds (Lok Capital & Aavishkaar), 
+                         leading India’s first virtual fund for social sector startups, judging a reality
+                          TV show on impact investing, launching a co-working and events space for
+                           underprivileged youth, representing 40+ major investors as board member 
+                           of the industry association, writing several op-eds, advising the government
+                            on development policy issues, and being selected as a ‘Champions of Change’
+                             by the PMO and Niti Aayog. Kartik will talk about how the youth of India can
+                              create the impact they want to see in the country. We can assure you that the 
+                              ROI of your time on the 14th of August will be extremely high!<br></br> 
+                      </p>
+                  </div>
+            </div>
+          </div>
+    
+          <div class="column">
+            <div class="card">
+                <img class="card-img-top" alt="Shivani Khetan" src="shivani.jpeg">
+                <div class="card-body">
+                    <h4 class="card-title">Shivani Khetan</h4>
+                    <p class="card-text" style="font-size: 12px;">
+                      Shivani, a certified life coach from Symbiosis Boston is an exemplary business 
+                      professional with over 8 years of rich extensive experience. She is a certified 
+                      master practitioner of NLP (Neuro Linguistic Programming), has completed certificate
+                       course in guidance and counselling orientation. Mrs. Shivani is the founder of the 
+                       renowned “Expresso Talk”, an organization which provides life and relationship 
+                       counselling and gives succour and strength to those who have been emotionally 
+                       shattered.
+                    </p>
+                </div>
+            </div>
+          </div>
+    
+          <div class="column">
+            <div class="card">
+                <img class="card-img-top" alt="Dawn Cordo" src="Dawn Cordo.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">Dawn Cordo </h4>
+                    <p class="card-text" style="font-size: 12px;">
+                      Dawn Cordo is a professional musician who worked on several projects in the
+                       music industry in Mumbai before studying at the Berklee College of Music in
+                        Boston. After completing her studies she returned to Mumbai to work on her
+                         music education program called The Gleehive Music Program, to help hone the 
+                         skills of the next generation. Dawn also continues her professional work,
+                          as music director, arranger and composer for varying projects, from theatre 
+                          and the performing arts to studio work.
+                    </p>
+                </div>
+            </div>
+          </div>
+    
+          <div class="column">
+            <div class="card">
+                <img class="card-img-top" alt="Ajay Verma" src="ajay verma.jpeg">
+                <div class="card-body">
+                    <h4 class="card-title">Ajay Verma</h4>
+                    <p class="card-text" style="font-size: 12px;">
+                      Ajay Verma. An advertising professional, A serial entrepreneur and a vintage 
+                      motorcycle collector. He has held leadership roles in agencies like DraftFCB, 
+                      Rediffusion Y&R, Contract & Percept H and led many successful brands. He has 
+                      had ups and downs throughout.
+                      Currently he is a Managing Partner with Enormous Brands – A leading 
+                      Independent adverting agency in India. He shares the same sentiments of 
+                      Steve Forbes, “Your brand is the single most important investment you can make 
+                      in your business.”
+                    </p>
+                </div>
+          </div>
+        </div>
+          </div>  
+          </div>
+    </div>
+    </div>
+    
+    <div class="card" >
+      <div class="card-header" data-toggle="collapse" href="#collapseTwo"  id="headingTwo"  style="background-color: black;" >
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+          <b>
+          2019
+      </b>
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+          <div class="card-body">
+        <div class="row">
+            <div class="column">
+              <div class="card">
+                  <img class="card-img-top" alt="Mayday Returns" src="DSC_0161.JPG" > 
+                  <div class="card-body">
+                      <h4 class="card-title"> Mayday Returns</h4>
+                      <p class="card-text" style="font-size: 12px;">
+                        Winners of one of the biggest international robotics competitions, 
+                        First Lego League and currently awaiting a patent, Team Mayday Returns 
+                        started exploring robotics in 2014.The team consists of four ambitious 
+                        ex-students of Jamnabai Narsee School and Jamnabai Narsee International School: 
+                        Vanshaj Ajmera,Yashish Mohnot,Aayush Shah and Jai Jariwala.
+                      </p>
+                      <a href="SPEAKERS/maydayreturns.html" target="_blank" class="btn btn-outline-secondary">See Profile</a>
+                  </div>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                  <img class="card-img-top" alt="Akshay Ayre" src="DSC_0103.JPG">
+                  <div class="card-body">
+                      <h4 class="card-title">Mr.Akshay Ayre</h4>
+                      <p class="card-text" style="font-size: 12px;">
+                        Mr. Akshay Ayre, a renowned Bharatanatyam dancer, who was trained under the 
+                        able guidance of Guru Smt. Tejaswini Lele and currently training in Bharata 
+                        Nrutyam under the guidance of Guru Dr. Jayashree Rajagopalan considers it his
+                         mission to pass on the tradition of Indian Classical Dance to the upcoming 
+                         generations.
+                      </p>
+                      <a href="SPEAKERS/akshay.html" target="_blank" class="btn btn-outline-secondary">See Profile</a>
+                  </div>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                  <img class="card-img-top" alt="Shronit Ladhani" src="shronit.jpg" width="75%">
+                  <div class="card-body">
+                      <h4 class="card-title">Mr.Shronit Ladhani</h4>
+                      <p class="card-text" style="font-size: 12px;">
+                        Mr. Shronit Ladhani is the Founder of CareerNinja, a young NASSCOM and Zee
+                         backed venture in the Education Technology sector which focusses on improving 
+                         our education system and creating skilled youth by inspiring, educating and 
+                         guiding them to achieve their career and life goals. 
+                      </p>
+                      <a href="SPEAKERS/shronit.html" target="_blank" class="btn btn-outline-secondary">See Profile</a>
+                  </div>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                  <img class="card-img-top" alt="Ishaan Ghosh" src="DSC_0189.JPG">
+                  <div class="card-body">
+                      <h4 class="card-title">Mr.Ishaan Ghosh</h4>
+                      <p class="card-text" style="font-size: 12px;">
+                        All of 19, Ishaan Ghosh stands out as one of the front ranking Tabla players in 
+                        the younger generation of India’s Classical Music scene.
+                        Since the age of 8, Ishaan has presented traditional Indian music at prestigious
+                         venues in Switzerland, France, Spain, UK, and Mexico among other countries.<br></br> 
+                      </p>
+                      <a href="SPEAKERS/ishaan.html" target="_blank" class="btn btn-outline-secondary">See Profile</a>
+                  </div>
+            </div>
+          </div>
+    
+          <div class="column">
+            <div class="card">
+                <img class="card-img-top" alt="pritesh Sodha" src="img.jpeg">
+                <div class="card-body">
+                    <h4 class="card-title">Mr.Pritesh Sodha</h4>
+                    <p class="card-text" style="font-size: 12px;">
+                      Originally an MBA in Marketing and now a theatre professional,
+                       Pritesh Sodha started his journey into theatre in 1999 with an amateur
+                        theatre group (Brahman Sabha Malad Kala Krida )and moved on to working with 
+                        theatre companies who were active in the experimental theatre circuit. 
+                    </p>
+                    <a href="SPEAKERS/pritesh.html" target="_blank" class="btn btn-outline-secondary">See Profile</a>
+                    <br><br>
+                    <br>
+                </div>
+            </div>
+          </div>
+    
+          <div class="column">
+            <div class="card">
+                <img class="card-img-top" alt="arpit Ratan" src="DSC_0046.JPG">
+                <div class="card-body">
+                    <h4 class="card-title">Mr.Arpit Ratan </h4>
+                    <p class="card-text" style="font-size: 12px;">
+                      Studied at ILS Law College and completed an LLM from Pune University, 
+                      Arpit Ratan is a serial entrepreneur. He co-founded Signzy in 2015 with 
+                      the aim of creating a trust mechanism in the digital economy and prior to 
+                      Signzy he has also co-founded the OjasLegal a modern law services firm focussed 
+                      on startups.
+                    </p>
+                    <a href="SPEAKERS/arpit.html" target="_blank" class="btn btn-outline-secondary">See Profile</a>
+                </div>
+            </div>
+          </div>
+    
+          <div class="column">
+            <div class="card">
+                <img class="card-img-top" alt="Chirag Chajer" src="DSC_0399.JPG">
+                <div class="card-body">
+                    <h4 class="card-title">Mr.Chirag Chhajer</h4>
+                    <p class="card-text" style="font-size: 12px;">
+                     Mr Chirag Chajjer is the co-founder 
+                    and the director of hunger pangs PVT Ltd, Burma Burma restaurant and tearoom. 
+                    He is known for his traditional Burmese dishes and was featured in the Forbes India
+                     30 under 30. He has won various awards throughout the year for his food. 
+                    </p>
+                    <a href="SPEAKERS/chirag.html" target="_blank" class="btn btn-outline-secondary">See Profile</a>
+                </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+              <img class="card-img-top" alt="nartana Flyers" src="nartana.png" height="150cm">
+              <div class="card-body">
+                  <h4 class="card-title">The Nartana Flyers</h4>
+                  <p class="card-text" style="font-size: 12px;">
+                    The Nartana Flyers is Jamnabai Narsee School's high school based dance group.
+                     It fuses the foreign dance style with the Indian folk dance styles. 
+                  </p>
+                  <a href="SPEAKERS\nartana.html" target="_blank" class="btn btn-outline-secondary">See Profile</a>
+                  <br><br><br><br><br>
+              </div>
+        </div>
+      </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+    <div class="card">
+      <div class="card-header" id="headingThree" data-toggle="collapse" href="#collapseThree" style="background-color: black;" >
+        <a role="button" class="collapsed show" data-toggle="collapse" href="#collapseThree">
+          <b>
+          2018
+        </b>
+        </a>
+      
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordionExample">
+          <div class="card-body">
+        <div class="row">
+            <div class="column">
+              <div class="card">
+                  <img class="card-img-top" alt="Mayur Varma" src="DSC_0520.JPG">
+                  <div class="card-body">
+                      <h4 class="card-title"> Mr.Mayur Varma</h4>
+                      <p class="card-text"  style="font-size: 12px;">
+                        A creative director, Mr Mayur Varma who was once prevented from doing
+                         marvellous things because of his colour-blindness. Today,he thanks fate for
+                          his disability since he believes it is his gift.    
+                      </p>
+                      <a href="SPEAKERS/mayur.html" target="_blank" class="btn btn-outline-secondary">See Profile</a>
+                  </div>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                  <img class="card-img-top" alt="Hrishikesh Mafatlal" src="DSC_0702.JPG">
+                  <div class="card-body">
+                      <h4 class="card-title">Mr.Hrishikesh Mafatlal</h4>
+                      <p class="card-text"  style="font-size: 12px;">
+                        Mr Mafatlal graduated with an honours degree in commerce from Sydenham college, Mumbai.
+                         He also competed an advanced management programme at Harvard business school. 
+                      </p>
+                      <a href="SPEAKERS/hrishikesh.html" target="_blank" class="btn btn-outline-secondary">See Profile</a>
+                  </div>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                  <img class="card-img-top" alt="Nilesh Shah"  src="DSC_0572.JPG">
+                  <div class="card-body">
+                      <h4 class="card-title">Mr.Nilesh Shah </h4>
+                      <p class="card-text" style="font-size: 12px;">
+                        Mr Nilesh Shah  is a gold medalist and a chartered accountant. He has also co-authored a book on 
+                         financial planning called “A direct take”.   
+                      </p>
+                      <a href="SPEAKERS/nilesh.html" target="_blank" class="btn btn-outline-secondary">See Profile</a>
+                  </div>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                  <img class="card-img-top" alt="Nikunj Dalmia" src="DSC_0533.JPG">
+                  <div class="card-body">
+                      <h4 class="card-title">Mr.Nikunj Dalmia</h4>
+                      <p class="card-text" style="font-size: 12px;">
+                        Mr Nikunj Dalmia is the face of ET Now’s market coverage and is India’s most 
+                        seasoned business news anchor who has seen the evolution of Indian financial
+                         markets for the last two decades. 
+                      </p>
+                      <a href="SPEAKERS/nikunj.html" target="_blank" class="btn btn-outline-secondary">See Profile</a>
+                  </div>
+            </div>
+          </div>
+    
+          <div class="column">
+            <div class="card">
+                <img class="card-img-top" alt="Sidharth Shah" src="DSC_0490.JPG">
+                <div class="card-body">
+                    <h4 class="card-title">Mr.Sidharth Shah</h4>
+                    <p class="card-text" style="font-size: 12px;">
+                      Mr Sidharth Shah is the founder of Think and Grow Academy.He is a best selling 
+                      author, a chartered accountant and an MBA gold medalist. 
+                    </p>
+                    <a href="SPEAKERS/sid.html" target="_blank" class="btn btn-outline-secondary">See Profile</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+                <img class="card-img-top" alt="contemporary Classics" src="dance.png" height="230cm">
+                <div class="card-body">
+                    <h4 class="card-title">Contemporary Classics</h4>
+                    <p class="card-text" style="font-size: 12px;">
+                      The Contemporary Classics are Jamnabai Narsee School's in-house performance group.
+                      It showcased a cultural blend of three Indian classical dance forms together with the 
+                      Western dance forms.
+                    </p>
+                    <a href="SPEAKERS\contemporary.html" target="_blank" class="btn btn-outline-secondary">See Profile</a>
+                <br><br>
+                  </div>
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="footer">
+  <div style="text-align: center">
+      <a href="https://github.com/lafeo/tedxyouthjns"><i title="Github: Developer info. + src"
+              class="fab fa-github footerItem"></i></a>
+      <a href="https://www.instagram.com/tedxyouthjns/"><i title="Instagram"
+              class="fab fa-instagram footerItem"></i></a>
+      <a href="https://www.facebook.com/tedxyouthjns/"><i title="Facebook"
+              class="fab fa-facebook footerItem"></i></a>
+      <a href="https://wa.me/+912226187474/?text=I'm%20*name*.%20This%20is%20my%20introduction%20video!"><i
+              title="Whatsapp: Message us!" class="fab fa-whatsapp footerItem"></i></a>
+      <a href="mailto:tedxyouthjns@jns.ac.in?"><i title="E-mail" class="far fa-envelope-open footerItem"></i></a>
+  </div>
+  <div style="text-align: center; margin-top: 24px;">
+      <!--<span stygit ple="font-size: 8pt; color: white; width: 100"><a
+              href="https://www.linkedin.com/in/raayaan-sahu-2b4796142/">Developer</a></span><br>-->
+      <span style="font-size: 8pt; color: white; width: 100%;">This independssssently organized TEDx event is operated
+          under license from TED</span>
+  </div>
+</div>
+<script>
+  var x = 0;
+document.getElementById("barZZ").onclick=function() {
+  if(x==1){
+     document.getElementById("respNav").style.visibility="hidden";
+     document.getElementById("barZZ").classList.remove("fa-times")
+     document.getElementById("barZZ").classList.add("fa-bars")
+     x=0;
+  }
+  else if(x==0){
+     document.getElementById("respNav").style.visibility="visible";
+     document.getElementById("barZZ").classList.remove("fa-bars")
+     document.getElementById("barZZ").classList.add("fa-times")
+     x=1;
+  }
+}
+</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <title>TEDxYouth@JNS Speakers</title>
+        <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+        
+    
+      </head>
+
+      <style>
+          @media screen and (max-width: 900px){
+            *{
+             box-sizing: border-box;
+            }
+           }
+
+           .bs-example{
+              margin: 60px;
+             
+           }
+
+           body {
+             font-family: Arial, Helvetica, sans-serif;
+             background-color: black
+           }
+           
+           /* Float four columns side by side */
+           .column {
+             float: left;
+             width: 25%;
+             padding: 0 10px;
+           }
+           
+           /* Remove extra left and right margins, due to padding */
+           .row {margin: 0 -5px;}
+           
+           /* Clear floats after the columns */
+           .row:after {
+             content: "";
+             display: table;
+             clear: both;
+           }
+           
+           /* Responsive columns */
+           @media screen and (max-width: 900px) {
+             .column {
+               width: 100%;
+               display: block;
+               margin-bottom: 20px;
+             }
+           }
+           
+           /* Style the counter cards */
+           .card {
+             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+             padding: 16px;
+           }
+
+           .card-header{
+             color: white;
+             font-weight: bolder;
+           }
+
+           p.c {
+            color:black;
+             font-weight: bolder;
+           font-style: oblique;
+           text-align: center;
+           }
+
+            .footerItem{
+              color: #fff;
+              font-size: 20pt;
+              margin: 16px;
+              cursor: pointer;
+              box-sizing: border-box;
+              transition: 0.3s;
+              }
+              .giZZ {
+              border-radius: 12px;
+              height: 48px !important;
+              margin-top: 24px;
+              margin-left: 16px;
+              line-height: 48px !important;
+               background-color: rgba(255, 255, 255, 0.1);
+              }
+  .navbarZZ {
+    height: 96px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.8);
+    padding-right: 64px;
+    box-sizing: border-box;
+    border-bottom: thin solid rgba(255, 255, 255, 0.2);
+    transition: 1s;
+  }
+  .navitemZZ{
+    height: 96px;
+    width: auto;
+    box-sizing: border-box;
+    line-height: 96px;
+    color: #fff;
+ 
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    float: right;
+    padding: 0px 24px;
+  }
+  .respZZ {
+    display: block;
+    float: none;
+    color: white;
+    line-height: 56px;
+    font-size: 15pt;
+  }
+  .respConZZ {
+    box-sizing: border-box;
+    border-bottom: thin solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    position: fixed;
+    top: 96px;
+    width: 100%;
+    text-align: center;
+    visibility: hidden;
+  }
+  .navitemZZ:hover .respZZ:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+  }
+ 
+  .giZZ:hover {
+    background-color: #e91e63;
+    border-radius: 48px;
+  }
+  .navbarZZ .icon{
+    display: none;
+    }
+    @media(max-width: 880px){
+      .navitemZZ{
+          display: none;
+      }
+      .giZZ{
+          margin: 12px;
+          width: wrap;
+      }
+      .nds{
+          width: 100%;
+          display: block;
+          text-align: center;
+          margin: 16px 0px;
+      }
+      .newDialog{
+          flex-direction: column;
+          padding: 48px;
+      }
+      .navbarZZ .icon{
+          position: relative;
+          float: right;
+          right: 0;
+          top: 32px;
+          color: white;
+          font-size: 20pt;
+          display: block;
+      }
+    }
+    .navback{
+      height:80px;
+      background-color: black;
+    }
+          </style>
+
+<body>
+  <div id="navZZ" class="navbarZZ">
+    <img height="64" style="margin-top: 16px; margin-left: 64px; float: left" src="lg.svg" />
+
+    <a ><i href="javascript:void(0);" id="barZZ" class="fas fa-bars icon"></i></a>
+
+    <div id="respNav" class="respConZZ">
+        <a id="" href="https://forms.gle/zVnRTij36Xzca3bB9" class="respZZ giZZ">Get tickets</a>
+        <!--<a id="" class="resp">Archive</a>-->
+        <!--<a id="" class="navitem ">Speakers</a>-->
+        <a id="" href="team.html" class="respZZ">Team</a>
+        <a id="" href="speaker.html" class="respZZ">Speakers</a>
+        <a id="" href="Blog/index.html" class="respZZ">Blog</a>
+        <a id="" href="about.html" class="respZZ">About <span style="color: red; font-weight: 700">TEDx</span></a>
+        <a id="" href="index.html" class="respZZ">Home</a>
+        
+    </div>
+      <a id="" href="https://forms.gle/zVnRTij36Xzca3bB9" class="navitemZZ giZZ">Get tickets</a>
+      <!--<a id="" class="navitem ">Archive</a>-->
+      <!--<a id="" class="navitem ">Speakers</a>-->
+      <a id="" href="team.html" class="navitemZZ ">Team</a>
+      <a id="" href="speaker.html" class="navitemZZ ">Speakers</a>
+      <a id="" href="Blog/index.html" class="navitemZZ ">Blog</a>
+      <a id="" href="about.html" class="navitemZZ ">About <span style="color: red; font-weight: 700">TEDx</span></a>
+      <a id="" href="index.html" class="navitemZZ ">Home</a>
+      
+  </div>
+    <div class="navback">
+
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+            <div class="col-md-7 heading-section text-center ftco-animate">
+                <div class="container">
+                   <img src="img12.jpeg" width="100%" style="margin-bottom: -100px !important;">
+                  </div>
+             </div>
+        </div>
+    </div>
+
+<div class="bs-example">
+   <div class="accordian" id="accordionExample">
+
+    <div class="card" >
+      <div class="card-header" data-toggle="collapse" href="#collapseOne" id="headingOne"  style="background-color: black;" style="align-content: center;">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+          <b>
+          2020
+        </b>
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+        <div class="card-body">
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                  <img class="card-img-top" alt=" Avani Dalal" src="avani dalal.jpeg" > 
+                  <div class="card-body">
+                      <h4 class="card-title">Avani Dalal</h4>
+                      <p class="card-text" style="font-size: 12px;">
+                        “You can only hope for a change if you have sown the seeds of change.” 
+                        With that thought in mind, she has been striving hard to make changes at
+                         grass-root levels since 2015 as the co-founder trustee of Spark-A-Change 
+                         Foundation, a 5 year old Mumbai-based NGO registered as a Charitable Trust
+                          under the Bombay Public Trust Act,1950. She enjoys working with the SAC 
+                          core team for generating awareness about campaigns, curating SAC curriculum, 
+                          fund-raising and provide overall development with after-school and in-school 
+                          programmes to 520 underprivileged children with the help of 60 committed
+                           volunteers. 
+                      </p>
+                  </div>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                  <img class="card-img-top" alt="Captain Rishabh Kapur" src="capt.jpeg">
+                  <div class="card-body">
+                      <h4 class="card-title">Captain Rishabh Kapur</h4>
+                      <p class="card-text" style="font-size: 12px;">
+                        Captain Rishabh Kapur is one of the many unsung heroes that have helped 
+                        unite thousands of families in india by being part of the Vande Bharat 
+                        Mission during the Corona Virus Pandemic. He also executed operation RAHAT, 
+                        which was the most complex evacuation ever in Indian Aviation during the Yemen 
+                        Crisis. When it comes to serving the nation, even the sky is not the limit for
+                         him.
+                      </p>
+                      
+                  </div>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                  <img class="card-img-top" alt="Brian Tellis " src="brian tellis.jpeg">
+                  <div class="card-body">
+                      <h4 class="card-title">Brian Tellis </h4>
+                      <p class="card-text" style="font-size: 12px;">
+                        Brian Tellis is an unparalled pioneer in the events and entertainment 
+                        industry with over 3 decades of experience .He has co-founded and  served  
+                        as the President of Fountainhead Promotions and Events Pvt Ltd . Brian is 
+                        also an accomplished emcee,musician and has several other accomplishments 
+                        under his belt .We can't wait to see what Brian has in store for us and we
+                        \ are looking forward to his talk on the 14th Of August at TEDxYouth@JNS 2020!
+                      <p>
+                  </div>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                  <img class="card-img-top" alt="Kartik Desai" src="Kartik Desai .jpg">
+                  <div class="card-body">
+                      <h4 class="card-title">Kartik Desai</h4>
+                      <p class="card-text" style="font-size: 12px;">
+                        Kartik, born in Delhi and raised in Geneva and New York, leads Asha Impact, 
+                        an impact investing and policy advocacy platform for major Indian business 
+                        leaders, UHNIs and philanthropists to invest in scalable, for-profit social 
+                        enterprises. A Wharton and Columbia University graduate who started his career 
+                        with Merrill Lynch, he is considered a pioneer of the impact financing ecosystem
+                         in India, having worked at the two largest impact funds (Lok Capital & Aavishkaar), 
+                         leading India’s first virtual fund for social sector startups, judging a reality
+                          TV show on impact investing, launching a co-working and events space for
+                           underprivileged youth, representing 40+ major investors as board member 
+                           of the industry association, writing several op-eds, advising the government
+                            on development policy issues, and being selected as a ‘Champions of Change’
+                             by the PMO and Niti Aayog. Kartik will talk about how the youth of India can
+                              create the impact they want to see in the country. We can assure you that the 
+                              ROI of your time on the 14th of August will be extremely high!<br></br> 
+                      </p>
+                  </div>
+            </div>
+          </div>
+    
+          <div class="column">
+            <div class="card">
+                <img class="card-img-top" alt="Shivani Khetan" src="shivani.jpeg">
+                <div class="card-body">
+                    <h4 class="card-title">Shivani Khetan</h4>
+                    <p class="card-text" style="font-size: 12px;">
+                      Shivani, a certified life coach from Symbiosis Boston is an exemplary business 
+                      professional with over 8 years of rich extensive experience. She is a certified 
+                      master practitioner of NLP (Neuro Linguistic Programming), has completed certificate
+                       course in guidance and counselling orientation. Mrs. Shivani is the founder of the 
+                       renowned “Expresso Talk”, an organization which provides life and relationship 
+                       counselling and gives succour and strength to those who have been emotionally 
+                       shattered.
+                    </p>
+                </div>
+            </div>
+          </div>
+    
+          <div class="column">
+            <div class="card">
+                <img class="card-img-top" alt="Dawn Cordo" src="Dawn Cordo.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">Dawn Cordo </h4>
+                    <p class="card-text" style="font-size: 12px;">
+                      Dawn Cordo is a professional musician who worked on several projects in the
+                       music industry in Mumbai before studying at the Berklee College of Music in
+                        Boston. After completing her studies she returned to Mumbai to work on her
+                         music education program called The Gleehive Music Program, to help hone the 
+                         skills of the next generation. Dawn also continues her professional work,
+                          as music director, arranger and composer for varying projects, from theatre 
+                          and the performing arts to studio work.
+                    </p>
+                </div>
+            </div>
+          </div>
+    
+          <div class="column">
+            <div class="card">
+                <img class="card-img-top" alt="Ajay Verma" src="ajay verma.jpeg">
+                <div class="card-body">
+                    <h4 class="card-title">Ajay Verma</h4>
+                    <p class="card-text" style="font-size: 12px;">
+                      Ajay Verma. An advertising professional, A serial entrepreneur and a vintage 
+                      motorcycle collector. He has held leadership roles in agencies like DraftFCB, 
+                      Rediffusion Y&R, Contract & Percept H and led many successful brands. He has 
+                      had ups and downs throughout.
+                      Currently he is a Managing Partner with Enormous Brands – A leading 
+                      Independent adverting agency in India. He shares the same sentiments of 
+                      Steve Forbes, “Your brand is the single most important investment you can make 
+                      in your business.”
+                    </p>
+                </div>
+          </div>
+        </div>
+          </div>  
+          </div>
+    </div>
+    </div>
+    
+    <div class="card" >
+      <div class="card-header" data-toggle="collapse" href="#collapseTwo"  id="headingTwo"  style="background-color: black;" >
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+          <b>
+          2019
+      </b>
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+          <div class="card-body">
+        <div class="row">
+            <div class="column">
+              <div class="card">
+                  <img class="card-img-top" alt="Mayday Returns" src="DSC_0161.JPG" > 
+                  <div class="card-body">
+                      <h4 class="card-title"> Mayday Returns</h4>
+                      <p class="card-text" style="font-size: 12px;">
+                        Winners of one of the biggest international robotics competitions, 
+                        First Lego League and currently awaiting a patent, Team Mayday Returns 
+                        started exploring robotics in 2014.The team consists of four ambitious 
+                        ex-students of Jamnabai Narsee School and Jamnabai Narsee International School: 
+                        Vanshaj Ajmera,Yashish Mohnot,Aayush Shah and Jai Jariwala.
+                      </p>
+                      <a href="SPEAKERS/maydayreturns.html" target="_blank" class="btn btn-outline-secondary">See Profile</a>
+                  </div>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                  <img class="card-img-top" alt="Akshay Ayre" src="DSC_0103.JPG">
+                  <div class="card-body">
+                      <h4 class="card-title">Mr.Akshay Ayre</h4>
+                      <p class="card-text" style="font-size: 12px;">
+                        Mr. Akshay Ayre, a renowned Bharatanatyam dancer, who was trained under the 
+                        able guidance of Guru Smt. Tejaswini Lele and currently training in Bharata 
+                        Nrutyam under the guidance of Guru Dr. Jayashree Rajagopalan considers it his
+                         mission to pass on the tradition of Indian Classical Dance to the upcoming 
+                         generations.
+                      </p>
+                      <a href="SPEAKERS/akshay.html" target="_blank" class="btn btn-outline-secondary">See Profile</a>
+                  </div>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                  <img class="card-img-top" alt="Shronit Ladhani" src="shronit.jpg" width="75%">
+                  <div class="card-body">
+                      <h4 class="card-title">Mr.Shronit Ladhani</h4>
+                      <p class="card-text" style="font-size: 12px;">
+                        Mr. Shronit Ladhani is the Founder of CareerNinja, a young NASSCOM and Zee
+                         backed venture in the Education Technology sector which focusses on improving 
+                         our education system and creating skilled youth by inspiring, educating and 
+                         guiding them to achieve their career and life goals. 
+                      </p>
+                      <a href="SPEAKERS/shronit.html" target="_blank" class="btn btn-outline-secondary">See Profile</a>
+                  </div>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                  <img class="card-img-top" alt="Ishaan Ghosh" src="DSC_0189.JPG">
+                  <div class="card-body">
+                      <h4 class="card-title">Mr.Ishaan Ghosh</h4>
+                      <p class="card-text" style="font-size: 12px;">
+                        All of 19, Ishaan Ghosh stands out as one of the front ranking Tabla players in 
+                        the younger generation of India’s Classical Music scene.
+                        Since the age of 8, Ishaan has presented traditional Indian music at prestigious
+                         venues in Switzerland, France, Spain, UK, and Mexico among other countries.<br></br> 
+                      </p>
+                      <a href="SPEAKERS/ishaan.html" target="_blank" class="btn btn-outline-secondary">See Profile</a>
+                  </div>
+            </div>
+          </div>
+    
+          <div class="column">
+            <div class="card">
+                <img class="card-img-top" alt="pritesh Sodha" src="img.jpeg">
+                <div class="card-body">
+                    <h4 class="card-title">Mr.Pritesh Sodha</h4>
+                    <p class="card-text" style="font-size: 12px;">
+                      Originally an MBA in Marketing and now a theatre professional,
+                       Pritesh Sodha started his journey into theatre in 1999 with an amateur
+                        theatre group (Brahman Sabha Malad Kala Krida )and moved on to working with 
+                        theatre companies who were active in the experimental theatre circuit. 
+                    </p>
+                    <a href="SPEAKERS/pritesh.html" target="_blank" class="btn btn-outline-secondary">See Profile</a>
+                    <br><br>
+                    <br>
+                </div>
+            </div>
+          </div>
+    
+          <div class="column">
+            <div class="card">
+                <img class="card-img-top" alt="arpit Ratan" src="DSC_0046.JPG">
+                <div class="card-body">
+                    <h4 class="card-title">Mr.Arpit Ratan </h4>
+                    <p class="card-text" style="font-size: 12px;">
+                      Studied at ILS Law College and completed an LLM from Pune University, 
+                      Arpit Ratan is a serial entrepreneur. He co-founded Signzy in 2015 with 
+                      the aim of creating a trust mechanism in the digital economy and prior to 
+                      Signzy he has also co-founded the OjasLegal a modern law services firm focussed 
+                      on startups.
+                    </p>
+                    <a href="SPEAKERS/arpit.html" target="_blank" class="btn btn-outline-secondary">See Profile</a>
+                </div>
+            </div>
+          </div>
+    
+          <div class="column">
+            <div class="card">
+                <img class="card-img-top" alt="Chirag Chajer" src="DSC_0399.JPG">
+                <div class="card-body">
+                    <h4 class="card-title">Mr.Chirag Chhajer</h4>
+                    <p class="card-text" style="font-size: 12px;">
+                     Mr Chirag Chajjer is the co-founder 
+                    and the director of hunger pangs PVT Ltd, Burma Burma restaurant and tearoom. 
+                    He is known for his traditional Burmese dishes and was featured in the Forbes India
+                     30 under 30. He has won various awards throughout the year for his food. 
+                    </p>
+                    <a href="SPEAKERS/chirag.html" target="_blank" class="btn btn-outline-secondary">See Profile</a>
+                </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+              <img class="card-img-top" alt="nartana Flyers" src="nartana.png" height="150cm">
+              <div class="card-body">
+                  <h4 class="card-title">The Nartana Flyers</h4>
+                  <p class="card-text" style="font-size: 12px;">
+                    The Nartana Flyers is Jamnabai Narsee School's high school based dance group.
+                     It fuses the foreign dance style with the Indian folk dance styles. 
+                  </p>
+                  <a href="SPEAKERS\nartana.html" target="_blank" class="btn btn-outline-secondary">See Profile</a>
+                  <br><br><br><br><br>
+              </div>
+        </div>
+      </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+    <div class="card">
+      <div class="card-header" id="headingThree" data-toggle="collapse" href="#collapseThree" style="background-color: black;" >
+        <a role="button" class="collapsed show" data-toggle="collapse" href="#collapseThree">
+          <b>
+          2018
+        </b>
+        </a>
+      
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordionExample">
+          <div class="card-body">
+        <div class="row">
+            <div class="column">
+              <div class="card">
+                  <img class="card-img-top" alt="Mayur Varma" src="DSC_0520.JPG">
+                  <div class="card-body">
+                      <h4 class="card-title"> Mr.Mayur Varma</h4>
+                      <p class="card-text"  style="font-size: 12px;">
+                        A creative director, Mr Mayur Varma who was once prevented from doing
+                         marvellous things because of his colour-blindness. Today,he thanks fate for
+                          his disability since he believes it is his gift.    
+                      </p>
+                      <a href="SPEAKERS/mayur.html" target="_blank" class="btn btn-outline-secondary">See Profile</a>
+                  </div>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                  <img class="card-img-top" alt="Hrishikesh Mafatlal" src="DSC_0702.JPG">
+                  <div class="card-body">
+                      <h4 class="card-title">Mr.Hrishikesh Mafatlal</h4>
+                      <p class="card-text"  style="font-size: 12px;">
+                        Mr Mafatlal graduated with an honours degree in commerce from Sydenham college, Mumbai.
+                         He also competed an advanced management programme at Harvard business school. 
+                      </p>
+                      <a href="SPEAKERS/hrishikesh.html" target="_blank" class="btn btn-outline-secondary">See Profile</a>
+                  </div>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                  <img class="card-img-top" alt="Nilesh Shah"  src="DSC_0572.JPG">
+                  <div class="card-body">
+                      <h4 class="card-title">Mr.Nilesh Shah </h4>
+                      <p class="card-text" style="font-size: 12px;">
+                        Mr Nilesh Shah  is a gold medalist and a chartered accountant. He has also co-authored a book on 
+                         financial planning called “A direct take”.   
+                      </p>
+                      <a href="SPEAKERS/nilesh.html" target="_blank" class="btn btn-outline-secondary">See Profile</a>
+                  </div>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                  <img class="card-img-top" alt="Nikunj Dalmia" src="DSC_0533.JPG">
+                  <div class="card-body">
+                      <h4 class="card-title">Mr.Nikunj Dalmia</h4>
+                      <p class="card-text" style="font-size: 12px;">
+                        Mr Nikunj Dalmia is the face of ET Now’s market coverage and is India’s most 
+                        seasoned business news anchor who has seen the evolution of Indian financial
+                         markets for the last two decades. 
+                      </p>
+                      <a href="SPEAKERS/nikunj.html" target="_blank" class="btn btn-outline-secondary">See Profile</a>
+                  </div>
+            </div>
+          </div>
+    
+          <div class="column">
+            <div class="card">
+                <img class="card-img-top" alt="Sidharth Shah" src="DSC_0490.JPG">
+                <div class="card-body">
+                    <h4 class="card-title">Mr.Sidharth Shah</h4>
+                    <p class="card-text" style="font-size: 12px;">
+                      Mr Sidharth Shah is the founder of Think and Grow Academy.He is a best selling 
+                      author, a chartered accountant and an MBA gold medalist. 
+                    </p>
+                    <a href="SPEAKERS/sid.html" target="_blank" class="btn btn-outline-secondary">See Profile</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+                <img class="card-img-top" alt="contemporary Classics" src="dance.png" height="230cm">
+                <div class="card-body">
+                    <h4 class="card-title">Contemporary Classics</h4>
+                    <p class="card-text" style="font-size: 12px;">
+                      The Contemporary Classics are Jamnabai Narsee School's in-house performance group.
+                      It showcased a cultural blend of three Indian classical dance forms together with the 
+                      Western dance forms.
+                    </p>
+                    <a href="SPEAKERS\contemporary.html" target="_blank" class="btn btn-outline-secondary">See Profile</a>
+                <br><br>
+                  </div>
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="footer">
+  <div style="text-align: center">
+      <a href="https://github.com/lafeo/tedxyouthjns"><i title="Github: Developer info. + src"
+              class="fab fa-github footerItem"></i></a>
+      <a href="https://www.instagram.com/tedxyouthjns/"><i title="Instagram"
+              class="fab fa-instagram footerItem"></i></a>
+      <a href="https://www.facebook.com/tedxyouthjns/"><i title="Facebook"
+              class="fab fa-facebook footerItem"></i></a>
+      <a href="https://wa.me/+912226187474/?text=I'm%20*name*.%20This%20is%20my%20introduction%20video!"><i
+              title="Whatsapp: Message us!" class="fab fa-whatsapp footerItem"></i></a>
+      <a href="mailto:tedxyouthjns@jns.ac.in?"><i title="E-mail" class="far fa-envelope-open footerItem"></i></a>
+  </div>
+  <div style="text-align: center; margin-top: 24px;">
+      <!--<span stygit ple="font-size: 8pt; color: white; width: 100"><a
+              href="https://www.linkedin.com/in/raayaan-sahu-2b4796142/">Developer</a></span><br>-->
+      <span style="font-size: 8pt; color: white; width: 100%;">This independssssently organized TEDx event is operated
+          under license from TED</span>
+  </div>
+</div>
+<script>
+  var x = 0;
+document.getElementById("barZZ").onclick=function() {
+  if(x==1){
+     document.getElementById("respNav").style.visibility="hidden";
+     document.getElementById("barZZ").classList.remove("fa-times")
+     document.getElementById("barZZ").classList.add("fa-bars")
+     x=0;
+  }
+  else if(x==0){
+     document.getElementById("respNav").style.visibility="visible";
+     document.getElementById("barZZ").classList.remove("fa-bars")
+     document.getElementById("barZZ").classList.add("fa-times")
+     x=1;
+  }
+}
+</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
+
